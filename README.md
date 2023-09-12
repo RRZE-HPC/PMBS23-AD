@@ -41,7 +41,7 @@ On the chip level, only memory-bound code shows a clear advantage of Sapphire Ra
 <a name="Description"></a>
 ## B. Description
 
-We provide an artifact description and an artifact evaluation appendix at \url{http://doi.org/10.5281/zenodo.8208135}. 
+We provide an artifact description and an artifact evaluation appendix at [https://doi.org/10.5281/zenodo.8208135](https://doi.org/10.5281/zenodo.8208135). 
 To allow a third party to duplicate the findings, this article provides our extensive performance data artifact and describes further details regarding the software environments, experimental design, and methodology employed for the results shown in the paper, entitled "SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study". 
 The computational artifacts will enable experienced performance engineers to reproduce and interpret the data shown in the paper in the appropriate way and to follow the conclusions we draw from it.
 
@@ -236,7 +236,7 @@ Communication delays for non-blocking calls were measured by time spent in the `
 
 ### Roofline monitoring of performance scaling
 
-![Roofline-scaling](Roofline-scaling-ClusterA-14nodes.pdf "Roofline-scaling")
+![Roofline-scaling](Roofline-scaling-ClusterA-14nodes.png "Roofline-scaling")
 
 In the above figure, we show graphs from the online monitoring system on ClusterA. Each dot is generated from a ten-second measurement (every minute) of the computational intensity and the performance, averaged over all nodes of the job. 
 Each job contained a scaling run from one to 14 nodes, so the data shows how the computational intensity and the per-node performance develops over time and, thus, with growing node count (denoted by the blue-green-red color scale). 
