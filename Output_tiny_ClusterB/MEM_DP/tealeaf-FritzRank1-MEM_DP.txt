@@ -1,0 +1,76 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+Successfully initialised 1 MPI ranks.
+Opening tea.out as log file.
+
+Timestep 1
+Error: 			5.444659e-11
+
+Timestep 2
+Error: 			3.489730e-12
+
+Timestep 3
+Error: 			2.490876e-13
+
+Timestep 4
+Error: 			1.519603e-14
+
+Timestep 5
+Error: 			9.874546e-16
+
+Checking results...
+Expected 9.200337173020409e+01
+Actual   9.200337173219228e+01
+This run [32mPASSED[0m (Difference is within 0.00000000%)
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/518.tealeaf_t/.output_14242_0_f2288.csv in CSV format.
+Group: 1
++------------------------------------------+---------+----------------+
+|                   Event                  | Counter |    f2288:0:0   |
++------------------------------------------+---------+----------------+
+|            Runtime (RDTSC) [s]           |   TSC   |       10594.32 |
+|             INSTR_RETIRED_ANY            |  FIXC0  | 53317165670421 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  | 21109302099874 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  | 21109593047040 |
+|              PWR_PKG_ENERGY              |   PWR0  |        1936803 |
+|              PWR_DRAM_ENERGY             |   PWR3  |     99800.3214 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |              0 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  | 35226316085068 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |              0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |   421826511045 |
+|               CAS_COUNT_RD               | MBOX0C0 |  1040672494387 |
+|               CAS_COUNT_WR               | MBOX0C1 |   417480236370 |
+|               CAS_COUNT_RD               | MBOX1C0 |  1040698097555 |
+|               CAS_COUNT_WR               | MBOX1C1 |   417486684113 |
+|               CAS_COUNT_RD               | MBOX2C0 |     1082362310 |
+|               CAS_COUNT_WR               | MBOX2C1 |     1083657567 |
+|               CAS_COUNT_RD               | MBOX3C0 |     1082363353 |
+|               CAS_COUNT_WR               | MBOX3C1 |     1083602088 |
+|               CAS_COUNT_RD               | MBOX4C0 |     1078903804 |
+|               CAS_COUNT_WR               | MBOX4C1 |     1078824084 |
+|               CAS_COUNT_RD               | MBOX5C0 |     1079211525 |
+|               CAS_COUNT_WR               | MBOX5C1 |     1079046195 |
++------------------------------------------+---------+----------------+
+
++-----------------------------------+-------------+
+|               Metric              |  f2288:0:0  |
++-----------------------------------+-------------+
+|        Runtime (RDTSC) [s]        |  10594.3200 |
+|        Runtime unhalted [s]       |  10555.7369 |
+|            Clock [MHz]            |   1999.7667 |
+|                CPI                |      0.3959 |
+|             Energy [J]            |     1936803 |
+|             Power [W]             |    182.8152 |
+|          Energy DRAM [J]          |  99800.3214 |
+|           Power DRAM [W]          |      9.4202 |
+|            DP [MFLOP/s]           |   3643.5494 |
+|          AVX DP [MFLOP/s]         |    318.5303 |
+|          Packed [MUOPS/s]         |     39.8163 |
+|          Scalar [MUOPS/s]         |   3325.0191 |
+|  Memory read bandwidth [MBytes/s] |  12599.6175 |
+|  Memory read data volume [GBytes] | 133484.3797 |
+| Memory write bandwidth [MBytes/s] |   5070.1405 |
+| Memory write data volume [GBytes] |  53714.6912 |
+|    Memory bandwidth [MBytes/s]    |  17669.7580 |
+|    Memory data volume [GBytes]    | 187199.0709 |
+|       Operational intensity       |      0.2062 |
++-----------------------------------+-------------+
+

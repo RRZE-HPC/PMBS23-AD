@@ -1,0 +1,110 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            1
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            1
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank = 1171.0
+ 
+ Estimated load imbalance =   0.00 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Group: 1
++------------------------------------------+---------+-----------------+
+|                   Event                  | Counter |    f0688:0:0    |
++------------------------------------------+---------+-----------------+
+|            Runtime (RDTSC) [s]           |   TSC   |        12531.66 |
+|             INSTR_RETIRED_ANY            |  FIXC0  |   7575044414430 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  29905481693295 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  29905465318656 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 149527408466475 |
+|              PWR_PKG_ENERGY              |   PWR0  |         1312655 |
+|              PWR_DRAM_ENERGY             |   PWR3  |     125236.7353 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |     14440412680 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |       350774428 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |               5 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |   3022208190036 |
+|               CAS_COUNT_RD               | MBOX0C0 |    732973039633 |
+|               CAS_COUNT_WR               | MBOX0C1 |    220273102069 |
+|               CAS_COUNT_RD               | MBOX1C0 |    733013748824 |
+|               CAS_COUNT_WR               | MBOX1C1 |    220282506757 |
+|               CAS_COUNT_RD               | MBOX2C0 |    732981704329 |
+|               CAS_COUNT_WR               | MBOX2C1 |    220272143448 |
+|               CAS_COUNT_RD               | MBOX3C0 |    732993822788 |
+|               CAS_COUNT_WR               | MBOX3C1 |    220264095908 |
+|               CAS_COUNT_RD               | MBOX4C0 |        42985356 |
+|               CAS_COUNT_WR               | MBOX4C1 |        42031440 |
+|               CAS_COUNT_RD               | MBOX5C0 |        41745401 |
+|               CAS_COUNT_WR               | MBOX5C1 |        41341013 |
+|               CAS_COUNT_RD               | MBOX6C0 |        42764434 |
+|               CAS_COUNT_WR               | MBOX6C1 |        41800892 |
+|               CAS_COUNT_RD               | MBOX7C0 |        43510795 |
+|               CAS_COUNT_WR               | MBOX7C1 |        43050068 |
++------------------------------------------+---------+-----------------+
+
++-----------------------------------+-------------+
+|               Metric              |  f0688:0:0  |
++-----------------------------------+-------------+
+|        Runtime (RDTSC) [s]        |  12531.6600 |
+|        Runtime unhalted [s]       |  12490.0935 |
+|            Clock [MHz]            |   2394.3374 |
+|                CPI                |      3.9479 |
+|             Energy [J]            |     1312655 |
+|             Power [W]             |    104.7471 |
+|          Energy DRAM [J]          | 125236.7353 |
+|           Power DRAM [W]          |      9.9936 |
+|            DP [MFLOP/s]           |   1931.6593 |
+|          AVX DP [MFLOP/s]         |   1929.3266 |
+|          Packed [MUOPS/s]         |    242.3181 |
+|          Scalar [MUOPS/s]         |      0.0280 |
+|  Memory read bandwidth [MBytes/s] |  14974.5950 |
+|  Memory read data volume [GBytes] | 187656.5326 |
+| Memory write bandwidth [MBytes/s] |   4500.6523 |
+| Memory write data volume [GBytes] |  56400.6446 |
+|    Memory bandwidth [MBytes/s]    |  19475.2473 |
+|    Memory data volume [GBytes]    | 244057.1772 |
+|       Operational intensity       |      0.0992 |
++-----------------------------------+-------------+
+

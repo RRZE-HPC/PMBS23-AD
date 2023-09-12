@@ -1,0 +1,59 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+[MPI0000]: 01 tasks, host f2288.nhr.fau.de, mpi_rank_x: 00, mpi_rank_y: 00, mpi_peer_left: 00, mpi_peer_right: 00, mpi_peer_top: 00, mpi_peer_bot: 00, LSIZEX: 4096 LSIZEY: 16384 (18.50 GB), pid: 321762
+[MPI0000]: GSIZEX: 4096, GSIZEY: 16384 (18.50 GB) NMPIX: 1 NMPIY: 1 
+[MPI0000]: Wct: 27684.85 s, (46141415.45 us/iter), Tswp_nc: 0.00 s (0.05 us/iter), Tswp_c 1.37 s (2288.30 us/iter), MLUP/s: 1.45 
+[GLOBAL-INFO] [4096x16384] NITER: 600 NMPI: 1 [01x01 X_MAJOR_ORDER] Wct: 27684.85 s (46141.42 ms/iter), Tswp_nc: 0.00 s (0.05 us/iter), Tswp_c 1.37 s (2288.30 us/iter), P: 9.62 GFLOPs, MLUP/s: 1.45 (FLOPs/site: 6613)
+[MPI#0000]: Tall: 27730.81 sec  Tini: 29.52 sec  Tlbm: 27697.15 sec
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/505.lbm_t/.output_321613_0_f2288.csv in CSV format.
+Group: 1
++------------------------------------------+---------+----------------+
+|                   Event                  | Counter |    f2288:0:0   |
++------------------------------------------+---------+----------------+
+|            Runtime (RDTSC) [s]           |   TSC   |        27730.9 |
+|             INSTR_RETIRED_ANY            |  FIXC0  | 62488561248580 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  | 55305812124210 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  | 55300448894400 |
+|              PWR_PKG_ENERGY              |   PWR0  |        4938202 |
+|              PWR_DRAM_ENERGY             |   PWR3  |    194967.3069 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |     1528430592 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  | 14563198826355 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |      671088640 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  | 35335346350747 |
+|               CAS_COUNT_RD               | MBOX0C0 |   191082160408 |
+|               CAS_COUNT_WR               | MBOX0C1 |   190466293397 |
+|               CAS_COUNT_RD               | MBOX1C0 |   191081159360 |
+|               CAS_COUNT_WR               | MBOX1C1 |   190466378551 |
+|               CAS_COUNT_RD               | MBOX2C0 |     2823700556 |
+|               CAS_COUNT_WR               | MBOX2C1 |     2824031861 |
+|               CAS_COUNT_RD               | MBOX3C0 |     2823937746 |
+|               CAS_COUNT_WR               | MBOX3C1 |     2824210837 |
+|               CAS_COUNT_RD               | MBOX4C0 |     2823794905 |
+|               CAS_COUNT_WR               | MBOX4C1 |     2823537343 |
+|               CAS_COUNT_RD               | MBOX5C0 |     2825722685 |
+|               CAS_COUNT_WR               | MBOX5C1 |     2824843680 |
++------------------------------------------+---------+----------------+
+
++-----------------------------------+-------------+
+|               Metric              |  f2288:0:0  |
++-----------------------------------+-------------+
+|        Runtime (RDTSC) [s]        |  27730.9000 |
+|        Runtime unhalted [s]       |  27652.9812 |
+|            Clock [MHz]            |   2000.1885 |
+|                CPI                |      0.8851 |
+|             Energy [J]            |     4938202 |
+|             Power [W]             |    178.0758 |
+|          Energy DRAM [J]          | 194967.3069 |
+|           Power DRAM [W]          |      7.0307 |
+|            DP [MFLOP/s]           |  10719.1512 |
+|          AVX DP [MFLOP/s]         |  10193.8796 |
+|          Packed [MUOPS/s]         |   1274.3022 |
+|          Scalar [MUOPS/s]         |    525.1614 |
+|  Memory read bandwidth [MBytes/s] |    908.0654 |
+|  Memory read data volume [GBytes] |  25181.4704 |
+| Memory write bandwidth [MBytes/s] |    905.2240 |
+| Memory write data volume [GBytes] |  25102.6749 |
+|    Memory bandwidth [MBytes/s]    |   1813.2893 |
+|    Memory data volume [GBytes]    |  50284.1454 |
+|       Operational intensity       |      5.9114 |
++-----------------------------------+-------------+
+

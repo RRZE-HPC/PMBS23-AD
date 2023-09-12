@@ -1,0 +1,118 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            2
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            2
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  585.5
+ 
+ Estimated load imbalance =   0.17 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Group: 1
++-------------------------+---------+----------------+----------------+
+|          Event          | Counter |    f0388:0:0   |    f0388:1:1   |
++-------------------------+---------+----------------+----------------+
+|    INSTR_RETIRED_ANY    |  FIXC0  |  3790302268883 |  4011675986127 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  | 16001439216797 | 16002968240182 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  | 16001437306080 | 16002974873760 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 80007196083985 | 80014841200910 |
+|     L2_LINES_IN_ALL     |   PMC0  |  1563911427530 |  1561203720424 |
+|      L2_TRANS_L2_WB     |   PMC1  |  1562024245515 |  1559397236516 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |     1448858299 |     1402410984 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |  1562024311566 |  1559397330296 |
++-------------------------+---------+----------------+----------------+
+
++------------------------------+---------+-----------------+----------------+----------------+----------------+
+|             Event            | Counter |       Sum       |       Min      |       Max      |       Avg      |
++------------------------------+---------+-----------------+----------------+----------------+----------------+
+|    INSTR_RETIRED_ANY STAT    |  FIXC0  |   7801978255010 |  3790302268883 |  4011675986127 |  3900989127505 |
+|  CPU_CLK_UNHALTED_CORE STAT  |  FIXC1  |  32004407456979 | 16001439216797 | 16002968240182 |       nil      |
+|   CPU_CLK_UNHALTED_REF STAT  |  FIXC2  |  32004412179840 | 16001437306080 | 16002974873760 | 16002206089920 |
+|      TOPDOWN_SLOTS STAT      |  FIXC3  | 160022037284895 | 80007196083985 | 80014841200910 |       nil      |
+|     L2_LINES_IN_ALL STAT     |   PMC0  |   3125115147954 |  1561203720424 |  1563911427530 |  1562557573977 |
+|      L2_TRANS_L2_WB STAT     |   PMC1  |   3121421482031 |  1559397236516 |  1562024245515 |   1.560711e+12 |
+|   L2_LINES_OUT_SILENT STAT   |   PMC2  |      2851269283 |     1402410984 |     1448858299 |   1.425635e+09 |
+| L2_LINES_OUT_NON_SILENT STAT |   PMC3  |   3121421641862 |  1559397330296 |  1562024311566 |  1560710820931 |
++------------------------------+---------+-----------------+----------------+----------------+----------------+
+
++-----------------------------------+-------------+-------------+
+|               Metric              |  f0388:0:0  |  f0388:1:1  |
++-----------------------------------+-------------+-------------+
+|        Runtime (RDTSC) [s]        |   6705.1840 |   6705.2290 |
+|        Runtime unhalted [s]       |   6683.0670 |   6683.7314 |
+|            Clock [MHz]            |   2394.3260 |   2394.3155 |
+|                CPI                |      4.2217 |      3.9891 |
+|    L3 load bandwidth [MBytes/s]   |  14927.3057 |  14901.3610 |
+|    L3 load data volume [GBytes]   | 100090.3314 |  99917.0381 |
+|   L3 evict bandwidth [MBytes/s]   |  14909.2935 |  14884.1194 |
+|   L3 evict data volume [GBytes]   |  99969.5559 |  99801.4291 |
+| L3|MEM evict bandwidth [MBytes/s] |  14909.2928 |  14884.1185 |
+| L3|MEM evict data volume [GBytes] |  99969.5517 |  99801.4231 |
+|  Dropped CLs bandwidth [MBytes/s] |     13.8291 |     13.3857 |
+|  Dropped CLs data volume [GBytes] |     92.7269 |     89.7543 |
+|      L3 bandwidth [MBytes/s]      |  29836.5985 |  29785.4795 |
+|      L3 data volume [GBytes]      | 200059.8831 | 199718.4612 |
++-----------------------------------+-------------+-------------+
+
++----------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                 Metric                 |     Sum     |     Min     |     Max     |     Avg     |   %ile 25   |   %ile 50   |   %ile 75   |
++----------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|        Runtime (RDTSC) [s] STAT        |  13410.4130 |   6705.1840 |   6705.2290 |   6705.2065 |   6705.1840 |   6705.1840 |   6705.2290 |
+|        Runtime unhalted [s] STAT       |  13366.7984 |   6683.0670 |   6683.7314 |   6683.3992 |   6683.0670 |   6683.0670 |   6683.7314 |
+|            Clock [MHz] STAT            |   4788.6415 |   2394.3155 |   2394.3260 |   2394.3207 |   2394.3155 |   2394.3155 |   2394.3260 |
+|                CPI STAT                |      8.2108 |      3.9891 |      4.2217 |      4.1054 |      3.9891 |      3.9891 |      4.2217 |
+|    L3 load bandwidth [MBytes/s] STAT   |  29828.6667 |  14901.3610 |  14927.3057 |  14914.3334 |  14901.3610 |  14901.3610 |  14927.3057 |
+|    L3 load data volume [GBytes] STAT   | 200007.3695 |  99917.0381 | 100090.3314 | 100003.6848 | 100090.3314 | 100090.3314 |  99917.0381 |
+|   L3 evict bandwidth [MBytes/s] STAT   |  29793.4129 |  14884.1194 |  14909.2935 |  14896.7064 |  14884.1194 |  14884.1194 |  14909.2935 |
+|   L3 evict data volume [GBytes] STAT   | 199770.9850 |  99801.4291 |  99969.5559 |  99885.4925 |  99801.4291 |  99801.4291 |  99969.5559 |
+| L3|MEM evict bandwidth [MBytes/s] STAT |  29793.4113 |  14884.1185 |  14909.2928 |  14896.7056 |  14884.1185 |  14884.1185 |  14909.2928 |
+| L3|MEM evict data volume [GBytes] STAT | 199770.9748 |  99801.4231 |  99969.5517 |  99885.4874 |  99801.4231 |  99801.4231 |  99969.5517 |
+|  Dropped CLs bandwidth [MBytes/s] STAT |     27.2148 |     13.3857 |     13.8291 |     13.6074 |     13.3857 |     13.3857 |     13.8291 |
+|  Dropped CLs data volume [GBytes] STAT |    182.4812 |     89.7543 |     92.7269 |     91.2406 |     89.7543 |     89.7543 |     92.7269 |
+|      L3 bandwidth [MBytes/s] STAT      |  59622.0780 |  29785.4795 |  29836.5985 |  29811.0390 |  29785.4795 |  29785.4795 |  29836.5985 |
+|      L3 data volume [GBytes] STAT      | 399778.3443 | 199718.4612 | 200059.8831 | 199889.1721 | 199718.4612 | 199718.4612 | 200059.8831 |
++----------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+

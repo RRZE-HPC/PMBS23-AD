@@ -1,0 +1,1097 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+WARN: Only 54 processes out of 162 can be assigned, running with 54 processes
+srun: Warning: can't honor --ntasks-per-node set to 18 which doesn't match the requested tasks 162 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+
+
+********************************************************************************
+***                            HPGMG-FV Benchmark                            ***
+********************************************************************************
+
+
+===== Benchmark setup ==========================================================
+
+attempting to create a 1024^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+  Creating Poisson (a=0.000000, b=1.000000) test problem
+  calculating D^{-1} exactly for level h=9.765625e-04 using 64 colors...  done
+  estimating  lambda_max... <2.223325077574835e+00
+
+attempting to create a 512^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 256^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 128^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 64^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 32^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 16^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 8^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 4^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+attempting to create a 2^3 level...
+  boundary condition = BC_DIRICHLET
+  Decomposing level via Z-mort ordering... done
+  Allocating vectors... done
+  Duplicating MPI_COMM_WORLD... done
+
+  Building restriction and interpolation lists... done
+
+  Building MPI subcommunicator for level 1... done
+  Building MPI subcommunicator for level 2... done
+  Building MPI subcommunicator for level 3... done
+  Building MPI subcommunicator for level 4... done
+  Building MPI subcommunicator for level 5... done
+  Building MPI subcommunicator for level 6... done
+  Building MPI subcommunicator for level 7... done
+  Building MPI subcommunicator for level 8... done
+  Building MPI subcommunicator for level 9... done
+
+  calculating D^{-1} exactly for level h=1.953125e-03 using 64 colors...  done
+  estimating  lambda_max... <2.223325186323705e+00
+  calculating D^{-1} exactly for level h=3.906250e-03 using 64 colors...  done
+  estimating  lambda_max... <2.223326055334546e+00
+  calculating D^{-1} exactly for level h=7.812500e-03 using 64 colors...  done
+  estimating  lambda_max... <2.223332976449118e+00
+  calculating D^{-1} exactly for level h=1.562500e-02 using 64 colors...  done
+  estimating  lambda_max... <2.223387382551032e+00
+  calculating D^{-1} exactly for level h=3.125000e-02 using 64 colors...  done
+  estimating  lambda_max... <2.223793919680370e+00
+  calculating D^{-1} exactly for level h=6.250000e-02 using 64 colors...  done
+  estimating  lambda_max... <2.226274210003948e+00
+  calculating D^{-1} exactly for level h=1.250000e-01 using 64 colors...  done
+  estimating  lambda_max... <2.230456244769483e+00
+  calculating D^{-1} exactly for level h=2.500000e-01 using 64 colors...  done
+  estimating  lambda_max... <2.232895109452600e+00
+  calculating D^{-1} exactly for level h=5.000000e-01 using 8 colors...  done
+  estimating  lambda_max... <1.375886524822695e+00
+
+
+
+===== Running 300 solves ========================================================
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+
+
+===== Running 300 solves ========================================================
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+
+
+===== Running 300 solves ========================================================
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+
+
+===== Richardson error analysis ================================================
+FMGSolve... f-cycle     norm=5.146144363315577e-09  rel=5.146822527132941e-09  done
+FMGSolve... f-cycle     norm=4.151187733563994e-08  rel=4.153376257231510e-08  done
+FMGSolve... f-cycle     norm=5.144232839704443e-07  rel=5.155087855806836e-07  done
+  h=9.765625000000000e-04  ||error||=5.757493743915876e-11
+  order=4.001
+
+
+===== Deallocating memory ======================================================
+attempting to free the restriction and interpolation lists... done
+attempting to free the     2^3 level... done
+attempting to free the     4^3 level... done
+attempting to free the     8^3 level... done
+attempting to free the    16^3 level... done
+attempting to free the    32^3 level... done
+attempting to free the    64^3 level... done
+attempting to free the   128^3 level... done
+attempting to free the   256^3 level... done
+attempting to free the   512^3 level... done
+attempting to free the  1024^3 level... done
+
+
+===== Done =====================================================================
+Group: 1
++------------------------------------------+---------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|                   Event                  | Counter |    f1205:0:0   |    f1205:1:1   |    f1205:2:2   |    f1205:3:3   |    f1205:4:4   |    f1205:5:5   |    f1205:6:6   |    f1205:7:7   |    f1205:8:8   |    f1205:9:9   |   f1205:10:10  |   f1205:11:11  |   f1205:12:12  |   f1205:13:13  |   f1205:14:14  |   f1205:15:15  |   f1205:16:16  |   f1205:17:17  |   f1205:18:18  |   f1205:19:19  |   f1205:20:20  |   f1205:21:21  |   f1205:22:22  |   f1205:23:23  |   f1205:24:24  |   f1205:25:25  |   f1205:26:26  |   f1205:27:27  |   f1205:28:28  |   f1205:29:29  |   f1205:30:30  |   f1205:31:31  |   f1205:32:32  |   f1205:33:33  |   f1205:34:34  |   f1205:35:35  |   f1205:36:36  |   f1205:37:37  |   f1205:38:38  |   f1205:39:39  |   f1205:40:40  |   f1205:41:41  |   f1205:42:42  |   f1205:43:43  |   f1205:44:44  |   f1205:45:45  |   f1205:46:46  |   f1205:47:47  |   f1205:48:48  |   f1205:49:49  |   f1205:50:50  |   f1205:51:51  |   f1205:52:52  |   f1205:53:53  |   f1206:54:0   |   f1206:55:1   |   f1206:56:2   |   f1206:57:3   |   f1206:58:4   |   f1206:59:5   |   f1206:60:6   |   f1206:61:7   |   f1206:62:8   |   f1206:63:9   |   f1206:64:10  |   f1206:65:11  |   f1206:66:12  |   f1206:67:13  |   f1206:68:14  |   f1206:69:15  |   f1206:70:16  |   f1206:71:17  |   f1206:72:18  |   f1206:73:19  |   f1206:74:20  |   f1206:75:21  |   f1206:76:22  |   f1206:77:23  |   f1206:78:24  |   f1206:79:25  |   f1206:80:26  |   f1206:81:27  |   f1206:82:28  |   f1206:83:29  |   f1206:84:30  |   f1206:85:31  |   f1206:86:32  |   f1206:87:33  |   f1206:88:34  |   f1206:89:35  |   f1206:90:36  |   f1206:91:37  |   f1206:92:38  |   f1206:93:39  |   f1206:94:40  |   f1206:95:41  |   f1206:96:42  |   f1206:97:43  |   f1206:98:44  |   f1206:99:45  |  f1206:100:46  |  f1206:101:47  |  f1206:102:48  |  f1206:103:49  |  f1206:104:50  |  f1206:105:51  |  f1206:106:52  |  f1206:107:53  |   f1207:108:0  |   f1207:109:1  |   f1207:110:2  |   f1207:111:3  |   f1207:112:4  |   f1207:113:5  |   f1207:114:6  |   f1207:115:7  |   f1207:116:8  |   f1207:117:9  |  f1207:118:10  |  f1207:119:11  |  f1207:120:12  |  f1207:121:13  |  f1207:122:14  |  f1207:123:15  |  f1207:124:16  |  f1207:125:17  |  f1207:126:18  |  f1207:127:19  |  f1207:128:20  |  f1207:129:21  |  f1207:130:22  |  f1207:131:23  |  f1207:132:24  |  f1207:133:25  |  f1207:134:26  |  f1207:135:27  |  f1207:136:28  |  f1207:137:29  |  f1207:138:30  |  f1207:139:31  |  f1207:140:32  |  f1207:141:33  |  f1207:142:34  |  f1207:143:35  |  f1207:144:36  |  f1207:145:37  |  f1207:146:38  |  f1207:147:39  |  f1207:148:40  |  f1207:149:41  |  f1207:150:42  |  f1207:151:43  |  f1207:152:44  |  f1207:153:45  |  f1207:154:46  |  f1207:155:47  |  f1207:156:48  |  f1207:157:49  |  f1207:158:50  |  f1207:159:51  |  f1207:160:52  |  f1207:161:53  |
++------------------------------------------+---------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  |  2477084871820 |  2317078510295 |  2243989729583 |  2301448992521 |  2163238955353 |  2431512616785 |  2287170267844 |  2238091811250 |  2259240583376 |  2315242111370 |  2332568293768 |  2202941945179 |  2298964339280 |  2408138809778 |  2404770432756 |  2321074880418 |  2208688992811 |  2042118448010 |  2038576285444 |  2166915011472 |  2160337910526 |  1965471018600 |  2074443860952 |  2414692451416 |  2083914409057 |  2162984814479 |  2070765263164 |  1985227525385 |  2322279227021 |  2124159893860 |  2113791030120 |  2056001510420 |  2039135060436 |  2058546640661 |  2013207596306 |  1880764467977 |  2209397539531 |  2374669768526 |  2449393924502 |  2408278984372 |  2418600111754 |  2370616527529 |  2421214956012 |  2353904956790 |  2314560464407 |  2390009599423 |  2530743078688 |  2536163519491 |  2421579832146 |  2402852414630 |  2395279803047 |  2395380880941 |  2411066858753 |  2098570858769 |  2165448051951 |  2400551458905 |  2447023987105 |  2438630625417 |  2151749951057 |  2258194108664 |  2265533909021 |  2382323089709 |  2371252808663 |  2340261976435 |  2345983251359 |  2193062257264 |  2504637672773 |  2267977915556 |  2394721694522 |  2506526495026 |  2386977717846 |  2061442240964 |  2253654164344 |  2337557668673 |  2190548704675 |  2354422261307 |  2262117485243 |  2282482035429 |  2135835892081 |  2301920320528 |  2588669424467 |  2567451781997 |  2340216216577 |  2272479166747 |  2287074553065 |  2246642332899 |  2397652855366 |  2327192426217 |  2064615578653 |  2128784112727 |  2171118836352 |  2326396456659 |  2412178435479 |  2381970217614 |  2179312236388 |  2497272626973 |  2332218531895 |  2333772071663 |  2308515695377 |  2314195086363 |  2345051779758 |  2246095917462 |  2251747824795 |  2245855218678 |  2497686621620 |  2447750145403 |  2340012176103 |  2111184324869 |  2256839758710 |  2480691488700 |  2367306682060 |  2375706586301 |  2249748406966 |  2410848297381 |  2543695965021 |  2471576322900 |  2421765370103 |  2304415545577 |  2403002459645 |  2370561594262 |  2491777821301 |  2473377180475 |  2381754635212 |  2408047799715 |  2331794037713 |  2097251416741 |  2100139468224 |  2283807550084 |  2413594582357 |  2042245920665 |  2118356767309 |  2207620311615 |  2116457828052 |  2386631971649 |  2129666495499 |  2148872968981 |  2280953886543 |  2173446638872 |  2361913705978 |  2190958345146 |  2189431548252 |  1996501758414 |  2058720938946 |  2052192841607 |  1935610889556 |  2081123790085 |  2119557516304 |  2131059412050 |  2016736603224 |  2136447164898 |  2142762120508 |  2141978920922 |  2147519855309 |  2147185757156 |  2089459228271 |  2102822899426 |  2272637783329 |  2108562366920 |  2166259736654 |  2162679681856 |  2127467990436 |  2278014682057 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  3300908391625 |  3300501534949 |  3300377075193 |  3301578629186 |  3300999943467 |  3300758118152 |  3300918885955 |  3298877373731 |  3301142462949 |  3300547084210 |  3300754804902 |  3300793086320 |  3296020758109 |  3298393821116 |  3299508835613 |  3299348863088 |  3292681371280 |  3299935233218 |  3297286531536 |  3296801539366 |  3300083864314 |  3300425033050 |  3299755034143 |  3301591863935 |  3300507093931 |  3296172418790 |  3298953435544 |  3299373767612 |  3300175818145 |  3299046539873 |  3297984117215 |  3298467121633 |  3289353375388 |  3290239612234 |  3295543605691 |  3290271774355 |  3287879895907 |  3294076911647 |  3292910284061 |  3292748528864 |  3295965974858 |  3295648700120 |  3300211308324 |  3299852545281 |  3293688235967 |  3290092941295 |  3289936913044 |  3298726895595 |  3296145288562 |  3294114189504 |  3294996465765 |  3291697680881 |  3296076245790 |  3295185711034 |  3297993479823 |  3296099068420 |  3296627591327 |  3296273171249 |  3288290592286 |  3295236053006 |  3293579156928 |  3297482825245 |  3299581175735 |  3294683911715 |  3299263378401 |  3298248934621 |  3298004778890 |  3295470098454 |  3296361923651 |  3298385741379 |  3299008077644 |  3295530957805 |  3290835316379 |  3292038206755 |  3282734505697 |  3290701943358 |  3291964309350 |  3291663009809 |  3293666533148 |  3287656855367 |  3295410940433 |  3298028449389 |  3298576766207 |  3298659395546 |  3298994939904 |  3299735287057 |  3299212450489 |  3296220871868 |  3295505117557 |  3299570902238 |  3288513140974 |  3299817129798 |  3300774619023 |  3295219759049 |  3292310968514 |  3296136799083 |  3287518380362 |  3294360332747 |  3287239407292 |  3291329700759 |  3292442485777 |  3287870609769 |  3291482201612 |  3286208653879 |  3291325477414 |  3293778440520 |  3291124642770 |  3296047794856 |  3294704917299 |  3300534985243 |  3293279551710 |  3301224522885 |  3300784864104 |  3294414324919 |  3293242720948 |  3290285170490 |  3296425426010 |  3296167308554 |  3298824976381 |  3296021227861 |  3297342973259 |  3300144124821 |  3300149199775 |  3300207525018 |  3301012789612 |  3300266545112 |  3297545190429 |  3298938547252 |  3293878698285 |  3295898306568 |  3299880388605 |  3299447461671 |  3296717433384 |  3300030057995 |  3296683401908 |  3298915770490 |  3299854137613 |  3298508706473 |  3300115778238 |  3296028778703 |  3299305076795 |  3293404043605 |  3294320862171 |  3295834021444 |  3292096885616 |  3297634528546 |  3297774627378 |  3299141354242 |  3294615980883 |  3293697332304 |  3292701757395 |  3292035977400 |  3296775369260 |  3293718762850 |  3297042635431 |  3293070278251 |  3295626436694 |  3297630746497 |  3294034347106 |  3296073353416 |  3295572283783 |  3298652361048 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  3300909399744 |  3300504202464 |  3300376956288 |  3301577812224 |  3301002487776 |  3300758556864 |  3300918767808 |  3298877444352 |  3301143913248 |  3300546850464 |  3300754761312 |  3300793248576 |  3296020946976 |  3298391671392 |  3299508463776 |  3299350061856 |  3292682469600 |  3299936584704 |  3297286063296 |  3296802133536 |  3300084998880 |  3300424222656 |  3299754597696 |  3301591647072 |  3300507936096 |  3296172836352 |  3298954275648 |  3299373078240 |  3300176458368 |  3299046328608 |  3297983643168 |  3298467752064 |  3289353164160 |  3290239958112 |  3295544799360 |  3290273688768 |  3287882846496 |  3294082898304 |  3292912712064 |  3292753400928 |  3295972475424 |  3295651849056 |  3300217112640 |  3299855981568 |  3293693171136 |  3290099512896 |  3289941624192 |  3298729700544 |  3296155159584 |  3294116536128 |  3295002235296 |  3291700772928 |  3296080323360 |  3295191158880 |  3297997048608 |  3296100926400 |  3296629361856 |  3296272260768 |  3288294843744 |  3295236679584 |  3293580997920 |  3297483482784 |  3299585647872 |  3294684084576 |  3299262796032 |  3298252210080 |  3298005366624 |  3295473611712 |  3296364509376 |  3298394782944 |  3299012284224 |  3295533314496 |  3290836717824 |  3292041008256 |  3282735031584 |  3290702503968 |  3291965931552 |  3291663601728 |  3293667764064 |  3287658604128 |  3295412900160 |  3298027862592 |  3298578312288 |  3298663039584 |  3298996097280 |  3299736929856 |  3299213866944 |  3296221565376 |  3295507068480 |  3299572761216 |  3288520818336 |  3299822635776 |  3300778458528 |  3295223832192 |  3292315686144 |  3296139714624 |  3287522177760 |  3294365330496 |  3287247823296 |  3291333875136 |  3292447935744 |  3287874962976 |  3291489984864 |  3286215345216 |  3291331047648 |  3293781853728 |  3291130166304 |  3296050848288 |  3294704234880 |  3300536476704 |  3293279171424 |  3301224944256 |  3300785302464 |  3294414193824 |  3293242309632 |  3290286381792 |  3296430324192 |  3296174432544 |  3298826943360 |  3296022235008 |  3297344819424 |  3300144483360 |  3300148812384 |  3300210372576 |  3301023494784 |  3300267471648 |  3297547130880 |  3298940840928 |  3293881619808 |  3295898682432 |  3299881402272 |  3299449665504 |  3296718868992 |  3300035157696 |  3296686703904 |  3298916658432 |  3299857512864 |  3298512166176 |  3300116658624 |  3296031649920 |  3299306492832 |  3293407971936 |  3294323448672 |  3295835190624 |  3292106949504 |  3297645348576 |  3297783727968 |  3299150990112 |  3294626084544 |  3293705434368 |  3292714383456 |  3292043965824 |  3296785818336 |  3293728053312 |  3297052666272 |  3293080561344 |  3295636356960 |  3297640355520 |  3294045901632 |  3296083792224 |  3295584226368 |  3298661741376 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 16504541958125 | 16502507674745 | 16501885375965 | 16507893145930 | 16504999717335 | 16503790590760 | 16504594429775 | 16494386868655 | 16505712314745 | 16502735421050 | 16503774024510 | 16503965431600 | 16480103790545 | 16491969105580 | 16497544178065 | 16496744315440 | 16463406856400 | 16499676166090 | 16486432657680 | 16484007696830 | 16500419321570 | 16502125165250 | 16498775170715 | 16507959319675 | 16502535469655 | 16480862093950 | 16494767177720 | 16496868838060 | 16500879090725 | 16495232699365 | 16489920586075 | 16492335608165 | 16446766876940 | 16451198061170 | 16477718028455 | 16451358871775 | 16439399479535 | 16470384558235 | 16464551420305 | 16463742644320 | 16479829874290 | 16478243500600 | 16501056541620 | 16499262726405 | 16468441179835 | 16450464706475 | 16449684565220 | 16493634477975 | 16480726442810 | 16470570947520 | 16474982328825 | 16458488404405 | 16480381228950 | 16475928555170 | 16489967399115 | 16480495342100 | 16483137956635 | 16481365856245 | 16441452961430 | 16476180265030 | 16467895784640 | 16487414126225 | 16497905878675 | 16473419558575 | 16496316892005 | 16491244673105 | 16490023894450 | 16477350492270 | 16481809618255 | 16491928706895 | 16495040388220 | 16477654789025 | 16454176581895 | 16460191033775 | 16413672528485 | 16453509716790 | 16459821546750 | 16458315049045 | 16468332665740 | 16438284276835 | 16477054702165 | 16490142246945 | 16492883831035 | 16493296977730 | 16494974699520 | 16498676435285 | 16496062252445 | 16481104359340 | 16477525587785 | 16497854511190 | 16442565704870 | 16499085648990 | 16503873095115 | 16476098795245 | 16461554842570 | 16480683995415 | 16437591901810 | 16471801663735 | 16436197036460 | 16456648503795 | 16462212428885 | 16439353048845 | 16457411008060 | 16431043269395 | 16456627387070 | 16468892202600 | 16455623213850 | 16480238974280 | 16473524586495 | 16502674926215 | 16466397758550 | 16506122614425 | 16503924320520 | 16472071624595 | 16466213604740 | 16451425852450 | 16482127130050 | 16480836542770 | 16494124881905 | 16480106139305 | 16486714866295 | 16500720624105 | 16500745998875 | 16501037625090 | 16505063948060 | 16501332725560 | 16487725952145 | 16494692736260 | 16469393491425 | 16479491532840 | 16499401943025 | 16497237308355 | 16483587166920 | 16500150289975 | 16483417009540 | 16494578852450 | 16499270688065 | 16492543532365 | 16500578891190 | 16480143893515 | 16496525383975 | 16467020218025 | 16471604310855 | 16479170107220 | 16460484428080 | 16488172642730 | 16488873136890 | 16495706771210 | 16473079904415 | 16468486661520 | 16463508786975 | 16460179887000 | 16483876846300 | 16468593814250 | 16485213177155 | 16465351391255 | 16478132183470 | 16488153732485 | 16470171735530 | 16480366767080 | 16477861418915 | 16493261805240 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |      402171453 |      371992146 |      372395614 |      369715901 |      354727990 |      378622702 |      361749846 |      364688125 |      361634134 |      348356422 |      372310258 |      368717657 |      362270102 |      355537078 |      358619837 |      358889142 |      355811590 |      354179222 |      350081069 |      348356422 |      378590322 |      365275158 |      364715689 |      382405542 |      367918066 |      370785053 |      356895190 |      355233798 |      375386350 |      358085133 |      366344310 |      356462006 |      356144022 |      367619609 |      369160338 |      354179222 |      350080941 |      348876806 |      355927302 |      358253302 |      376480101 |      370337850 |      355537206 |      368092646 |      354155277 |      366653866 |      382109358 |      367085033 |      373726034 |      361503154 |      365954214 |      359009805 |      356895318 |      348356550 |      348356422 |      357045005 |      367918066 |      365620578 |      358056365 |      357169830 |      368349098 |      365824054 |      350081069 |      370843786 |      364515306 |      364234902 |      376243989 |      355811590 |      376207606 |      378759017 |      370244194 |      348356422 |      348356422 |      355325821 |      355667238 |      360131670 |      355652662 |      357536237 |      361952118 |      368076738 |      371992146 |      376863229 |      369001410 |      360796278 |      358070813 |      354727990 |      360521766 |      355927302 |      354155533 |      348356422 |      348356422 |      372772594 |      378820421 |      375510490 |      355872994 |      375648009 |      364856166 |      364515306 |      369384538 |      350471165 |      365824054 |      367959002 |      358094502 |      358677629 |      365086002 |      367918066 |      355513517 |      348356422 |      348876678 |      357819990 |      358085133 |      366792198 |      362373646 |      373491254 |      367619609 |      382109358 |      364645594 |      355079949 |      367702550 |      355927302 |      370337850 |      375555429 |      358643398 |      355537206 |      348356678 |      350080941 |      355320614 |      370085010 |      367085033 |      356057334 |      355927430 |      366488790 |      359410737 |      374710906 |      354049062 |      357819862 |      371334077 |      368318998 |      382875102 |      363744061 |      365000646 |      376972146 |      348356422 |      350081069 |      354699350 |      356736262 |      357964470 |      359269997 |      355811590 |      362356790 |      369252233 |      370764322 |      348356422 |      362558806 |      364948189 |      361890714 |      377744986 |      355652662 |      369777305 |      372969922 |      371992146 |      390972002 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |   163325553467 |   154097653508 |   150482740500 |   147889225729 |   144688308749 |   150719035942 |   146210423973 |   145557283901 |   141921768484 |   140433177678 |   155988329436 |   153318528565 |   149804535198 |   145185110628 |   147010406263 |   147363129113 |   145408688180 |   144788344491 |   141355903297 |   140423209234 |   151503747203 |   147759808584 |   147551385811 |   153651413271 |   153532427468 |   146787359295 |   141391220010 |   141549848603 |   148893963140 |   146499395779 |   152344853506 |   146072151972 |   145447193491 |   152454805120 |   154091810499 |   144791609592 |   141099772914 |   141118909274 |   145509361966 |   147046609496 |   151356630107 |   148561183281 |   145425200928 |   143170319621 |   141556973422 |   146418007134 |   156372714960 |   152171488683 |   147842411459 |   146632982125 |   152224504409 |   146878862543 |   146347325553 |   140732388710 |   140433486652 |   145489039138 |   153537298844 |   151571595082 |   146492724036 |   146565072651 |   149802509922 |   142393332330 |   141363050628 |   146782318716 |   146762044590 |   147684353797 |   149540937597 |   145407366912 |   151342443124 |   155192453037 |   155328046351 |   140427221749 |   140433807235 |   144719846895 |   145475114161 |   148395917811 |   145070750506 |   146294120715 |   149148718640 |   153376869458 |   155849783317 |   158300762272 |   153749240300 |   148720400172 |   146584869215 |   144687739504 |   148518945614 |   145557978079 |   144412675593 |   140426289425 |   140432663874 |   156064745070 |   154980279370 |   151407570432 |   145234312998 |   149339472513 |   148036267475 |   146463850779 |   146571082311 |   141380563565 |   142380351208 |   149873451847 |   146950456318 |   146623776847 |   151299419020 |   153531924680 |   145112982572 |   140425373425 |   140849934705 |   146740070232 |   146498686650 |   152405961876 |   146971833909 |   147629520600 |   152453984609 |   156073154911 |   146044049681 |   141648081550 |   143225636754 |   145508313282 |   148474516078 |   151285318408 |   147157873873 |   145424297803 |   141000393240 |   141085670918 |   145040467964 |   154469496288 |   152170099737 |   145625388318 |   145781791545 |   152269666064 |   146914738552 |   148508171555 |   141370830386 |   141478426216 |   147130277338 |   153573345857 |   153936409858 |   147354201282 |   147417763055 |   151271139837 |   140436463649 |   141361788858 |   144905827039 |   145784903473 |   146969492181 |   147188016691 |   145406220682 |   149655369323 |   153599042582 |   155358324040 |   140426147873 |   142007907164 |   145800351902 |   146163961079 |   150574547255 |   145069821579 |   147667130982 |   150857420095 |   153802800381 |   158626138827 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |              0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |   358653837848 |   353452611200 |   354438330560 |   355994994496 |   353234811584 |   354859664768 |   353970141536 |   356312777728 |   354148878848 |   353234696000 |   353912993504 |   354946703776 |   353998699040 |   353235736256 |   355201938496 |   353659492544 |   353234233664 |   353913687008 |   355287066112 |   353236429760 |   355259360736 |   353983189280 |   355766559168 |   354411877920 |   353828790464 |   356381678944 |   353826592256 |   354068342528 |   354679456928 |   354946819360 |   353657989952 |   353828328128 |   353662266560 |   354947859616 |   353234349248 |   353913224672 |   354946357024 |   353998930208 |   353490739808 |   353236545344 |   356698746752 |   354027520832 |   353488081376 |   355306247840 |   355239149344 |   354650670816 |   354072495808 |   354946934944 |   354845180128 |   354212916384 |   353661804224 |   354947975200 |   353489815136 |   353659723712 |   353234464832 |   355370575648 |   353827981376 |   353236660928 |   355371615904 |   353489352800 |   354590268768 |   354424453376 |   355285679104 |   354974519840 |   353774897792 |   354066664512 |   356367007296 |   353234696000 |   354906219328 |   355612464512 |   353915189600 |   353235736256 |   353234580416 |   355625463616 |   353575058336 |   353662035392 |   353235620672 |   355201822912 |   353659954880 |   353234118080 |   353232962240 |   356485093760 |   353236314176 |   353659839296 |   355201360576 |   353234811584 |   353657758784 |   353573324576 |   355627081792 |   353235851840 |   353234696000 |   353922539424 |   355625692512 |   354891835488 |   353243403936 |   356369234336 |   354058563392 |   353811570560 |   354935073056 |   355296267328 |   354426880640 |   354568572192 |   353489468384 |   355372540576 |   353233771328 |   353828790464 |   355373580832 |   353235967424 |   353660070464 |   353489006048 |   354946819360 |   353667535872 |   354220468480 |   354842251392 |   354947859616 |   354109399744 |   354612208544 |   355275706528 |   355268303648 |   353490739808 |   354039380480 |   356678090432 |   353233886912 |   353488081376 |   353998236704 |   354948437536 |   353914958432 |   353236083008 |   354946934944 |   353657527616 |   353828443712 |   353673259328 |   354957176416 |   354687213344 |   354051847232 |   353863727360 |   356338126880 |   353837182592 |   354413233984 |   355757966816 |   353999222240 |   355234706528 |   353234002496 |   355285679104 |   353914496096 |   353236198592 |   353660301632 |   355201244992 |   353234696000 |   353998467872 |   354948090784 |   353926644704 |   353235736256 |   354186245120 |   356272521856 |   353981076512 |   354852830976 |   353235620672 |   356010071840 |   354423831136 |   353489052800 |   354540606784 |
++------------------------------------------+---------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
++-----------------------------------------------+---------+------------------+----------------+----------------+--------------+
+|                     Event                     | Counter |        Sum       |       Min      |       Max      |      Avg     |
++-----------------------------------------------+---------+------------------+----------------+----------------+--------------+
+|             INSTR_RETIRED_ANY STAT            |  FIXC0  |  367250374341424 |  1880764467977 |  2588669424467 | 2.266978e+12 |
+|           CPU_CLK_UNHALTED_CORE STAT          |  FIXC1  |  533975065631375 |  3282734505697 |  3301591863935 | 3.296142e+12 |
+|           CPU_CLK_UNHALTED_REF STAT           |  FIXC2  |  533975580510912 |  3282735031584 |  3301591647072 | 3.296146e+12 |
+|               TOPDOWN_SLOTS STAT              |  FIXC3  | 2669875328156875 | 16413672528485 | 16507959319675 |      nil     |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE STAT |   PMC0  |      58821837904 |      348356422 |      402171453 | 3.630978e+08 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE STAT   |   PMC1  |   23909158853223 |   140423209234 |   163325553467 | 1.475874e+11 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE STAT |   PMC2  |                0 |              0 |              0 |            0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE STAT |   PMC3  |   57402835703640 |   353232962240 |   358653837848 | 3.543385e+11 |
++-----------------------------------------------+---------+------------------+----------------+----------------+--------------+
+
++----------------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|        Metric        | f1205:0:0 | f1205:1:1 | f1205:2:2 | f1205:3:3 | f1205:4:4 | f1205:5:5 | f1205:6:6 | f1205:7:7 | f1205:8:8 | f1205:9:9 | f1205:10:10 | f1205:11:11 | f1205:12:12 | f1205:13:13 | f1205:14:14 | f1205:15:15 | f1205:16:16 | f1205:17:17 | f1205:18:18 | f1205:19:19 | f1205:20:20 | f1205:21:21 | f1205:22:22 | f1205:23:23 | f1205:24:24 | f1205:25:25 | f1205:26:26 | f1205:27:27 | f1205:28:28 | f1205:29:29 | f1205:30:30 | f1205:31:31 | f1205:32:32 | f1205:33:33 | f1205:34:34 | f1205:35:35 | f1205:36:36 | f1205:37:37 | f1205:38:38 | f1205:39:39 | f1205:40:40 | f1205:41:41 | f1205:42:42 | f1205:43:43 | f1205:44:44 | f1205:45:45 | f1205:46:46 | f1205:47:47 | f1205:48:48 | f1205:49:49 | f1205:50:50 | f1205:51:51 | f1205:52:52 | f1205:53:53 | f1206:54:0 | f1206:55:1 | f1206:56:2 | f1206:57:3 | f1206:58:4 | f1206:59:5 | f1206:60:6 | f1206:61:7 | f1206:62:8 | f1206:63:9 | f1206:64:10 | f1206:65:11 | f1206:66:12 | f1206:67:13 | f1206:68:14 | f1206:69:15 | f1206:70:16 | f1206:71:17 | f1206:72:18 | f1206:73:19 | f1206:74:20 | f1206:75:21 | f1206:76:22 | f1206:77:23 | f1206:78:24 | f1206:79:25 | f1206:80:26 | f1206:81:27 | f1206:82:28 | f1206:83:29 | f1206:84:30 | f1206:85:31 | f1206:86:32 | f1206:87:33 | f1206:88:34 | f1206:89:35 | f1206:90:36 | f1206:91:37 | f1206:92:38 | f1206:93:39 | f1206:94:40 | f1206:95:41 | f1206:96:42 | f1206:97:43 | f1206:98:44 | f1206:99:45 | f1206:100:46 | f1206:101:47 | f1206:102:48 | f1206:103:49 | f1206:104:50 | f1206:105:51 | f1206:106:52 | f1206:107:53 | f1207:108:0 | f1207:109:1 | f1207:110:2 | f1207:111:3 | f1207:112:4 | f1207:113:5 | f1207:114:6 | f1207:115:7 | f1207:116:8 | f1207:117:9 | f1207:118:10 | f1207:119:11 | f1207:120:12 | f1207:121:13 | f1207:122:14 | f1207:123:15 | f1207:124:16 | f1207:125:17 | f1207:126:18 | f1207:127:19 | f1207:128:20 | f1207:129:21 | f1207:130:22 | f1207:131:23 | f1207:132:24 | f1207:133:25 | f1207:134:26 | f1207:135:27 | f1207:136:28 | f1207:137:29 | f1207:138:30 | f1207:139:31 | f1207:140:32 | f1207:141:33 | f1207:142:34 | f1207:143:35 | f1207:144:36 | f1207:145:37 | f1207:146:38 | f1207:147:39 | f1207:148:40 | f1207:149:41 | f1207:150:42 | f1207:151:43 | f1207:152:44 | f1207:153:45 | f1207:154:46 | f1207:155:47 | f1207:156:48 | f1207:157:49 | f1207:158:50 | f1207:159:51 | f1207:160:52 | f1207:161:53 |
++----------------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|  Runtime (RDTSC) [s] | 1402.6880 | 1417.5610 | 1402.8430 | 1388.0890 | 1417.8070 | 1402.7370 | 1402.7130 | 1402.7110 | 1417.6200 | 1402.7220 |   1417.6360 |   1388.2740 |   1402.7100 |   1388.0270 |   1417.5480 |   1388.0450 |   1388.0100 |   1388.0530 |   1402.6930 |   1388.0170 |   1388.0310 |   1417.5470 |   1388.2870 |   1417.7250 |   1388.0080 |   1417.5950 |   1417.6150 |   1417.8310 |   1402.7720 |   1388.2340 |   1402.6850 |   1402.7460 |   1402.7390 |   1388.0140 |   1417.5730 |   1417.5360 |   1417.7220 |   1387.9960 |   1402.7950 |   1402.6890 |   1417.5440 |   1402.7760 |   1402.7810 |   1402.7020 |   1402.7810 |   1417.6710 |   1417.6180 |   1388.3070 |   1417.7980 |   1402.6960 |   1417.5950 |   1387.9990 |   1417.5820 |   1417.5570 |  1402.7830 |  1403.1890 |  1417.8680 |  1402.7700 |  1402.7720 |  1402.8690 |  1402.8020 |  1388.4010 |  1402.7680 |  1402.7780 |   1402.9570 |   1402.7830 |   1403.0370 |   1417.7830 |   1402.9110 |   1417.7090 |   1417.7950 |   1402.9810 |   1402.7540 |   1417.8490 |   1388.4780 |   1402.7610 |   1402.7590 |   1402.9650 |   1417.8290 |   1388.3560 |   1388.3570 |   1388.4030 |   1402.7720 |   1417.8180 |   1417.8990 |   1402.8420 |   1402.7700 |   1402.7620 |   1417.8100 |   1417.9570 |   1417.8060 |   1388.4600 |   1403.0390 |   1388.5160 |   1388.4100 |   1388.3480 |   1403.2120 |   1417.8290 |   1417.8120 |   1403.0100 |    1417.8280 |    1417.8310 |    1402.9730 |    1402.8740 |    1388.4080 |    1402.7630 |    1388.3610 |    1388.3470 |   1403.5880 |   1403.7250 |   1418.5310 |   1418.5160 |   1403.5280 |   1403.5440 |   1403.5030 |   1418.4700 |   1418.6320 |   1418.3930 |    1418.4460 |    1403.4450 |    1418.7940 |    1403.6030 |    1403.4800 |    1418.4360 |    1418.4660 |    1418.3970 |    1403.5340 |    1403.4400 |    1418.3680 |    1403.7560 |    1403.4330 |    1403.4320 |    1403.5130 |    1403.4410 |    1403.4850 |    1418.3980 |    1418.5500 |    1403.4560 |    1418.4540 |    1418.3800 |    1418.3840 |    1418.5250 |    1418.4630 |    1418.4600 |    1403.4390 |    1418.5750 |    1418.4280 |    1418.4050 |    1418.3730 |    1403.6900 |    1403.6820 |    1418.3770 |    1418.3900 |    1418.4140 |    1418.3710 |    1403.8320 |    1403.5630 |    1403.4690 |    1418.4740 |    1403.5520 |    1418.3890 |    1418.3850 |
+| Runtime unhalted [s] | 1378.6413 | 1378.4718 | 1378.4200 | 1378.9614 | 1378.9152 | 1378.6119 | 1378.6471 | 1377.7930 | 1378.8206 | 1378.4910 |   1378.6483 |   1378.5949 |   1376.6009 |   1377.5902 |   1378.0575 |   1377.9937 |   1375.2080 |   1378.2365 |   1377.1290 |   1376.9282 |   1378.2984 |   1378.4404 |   1378.1625 |   1379.0736 |   1378.4741 |   1376.7171 |   1377.8728 |   1378.2642 |   1378.3355 |   1378.0837 |   1377.4228 |   1377.6248 |   1373.8143 |   1374.1876 |   1376.4044 |   1374.1984 |   1373.3633 |   1375.7902 |   1375.3014 |   1375.2338 |   1376.5782 |   1376.5218 |   1378.4001 |   1378.2016 |   1375.6438 |   1374.2384 |   1374.1594 |   1377.7699 |   1376.8745 |   1375.8026 |   1376.2199 |   1374.7962 |   1376.6638 |   1376.2502 |  1377.4505 |  1376.6415 |  1376.9178 |  1376.7121 |  1373.3812 |  1376.2823 |  1375.5858 |  1377.2186 |  1378.0929 |  1376.0492 |   1377.9631 |   1377.5507 |   1377.4378 |   1376.3776 |   1376.8127 |   1377.5952 |   1377.8558 |   1376.4031 |   1374.4417 |   1374.9490 |   1371.0584 |   1374.3876 |   1374.9139 |   1374.7880 |   1375.6233 |   1373.1208 |   1376.3543 |   1377.4461 |   1377.6763 |   1377.7097 |   1377.8920 |   1378.1609 |   1377.9420 |   1376.6924 |   1376.3935 |   1378.2168 |   1373.4734 |   1378.1941 |   1378.8225 |   1376.3119 |   1375.0590 |   1376.6576 |   1373.0665 |   1375.9287 |   1372.9386 |   1374.6488 |    1375.1131 |    1373.2021 |    1374.7213 |    1372.5094 |    1374.6457 |    1375.6709 |    1374.5624 |    1376.6209 |   1376.2047 |   1378.6999 |   1375.5511 |   1378.7648 |   1378.5810 |   1375.9191 |   1375.4304 |   1374.1961 |   1376.9498 |   1376.6527 |    1377.7653 |    1376.6137 |    1377.4947 |    1378.4014 |    1378.3167 |    1378.3402 |    1378.6991 |    1378.3665 |    1377.2279 |    1377.8116 |    1375.6962 |    1376.8716 |    1378.2023 |    1378.0232 |    1376.8822 |    1378.2671 |    1376.8669 |    1377.8004 |    1378.3284 |    1377.6308 |    1378.3006 |    1376.5935 |    1377.9609 |    1375.6235 |    1375.8830 |    1376.5142 |    1374.9526 |    1377.3968 |    1377.3237 |    1377.8948 |    1376.0033 |    1375.8692 |    1375.4433 |    1374.9293 |    1376.9085 |    1375.6287 |    1377.0166 |    1375.7065 |    1376.4264 |    1377.2991 |    1375.8120 |    1376.6640 |    1376.4052 |    1377.6912 |
+|      Clock [MHz]     | 2394.3192 | 2394.3172 | 2394.3190 | 2394.2508 | 2393.9088 | 2394.2617 | 2394.3177 | 2394.3200 | 2394.1773 | 2394.3190 |   2394.1964 |   2394.3169 |   2394.3182 |   2394.3230 |   2394.3189 |   2394.3126 |   2394.3143 |   2394.3160 |   2394.3196 |   2394.3159 |   2394.3166 |   2394.3189 |   2394.3152 |   2394.0653 |   2394.3187 |   2394.2262 |   2394.2360 |   2393.8621 |   2394.3193 |   2393.9379 |   2394.3153 |   2394.3142 |   2394.3218 |   2394.3159 |   2394.3126 |   2394.3194 |   2394.0329 |   2394.3120 |   2394.3172 |   2394.3155 |   2394.3133 |   2394.1833 |   2394.2290 |   2394.3153 |   2394.2851 |   2394.1162 |   2394.1416 |   2394.2488 |   2393.9259 |   2394.3201 |   2394.2327 |   2394.3145 |   2394.2463 |   2394.3178 |  2394.2710 |  2394.3033 |  2394.2068 |  2394.3089 |  2394.2997 |  2394.3020 |  2394.3090 |  2394.3055 |  2394.3065 |  2394.3067 |   2394.3051 |   2394.2826 |   2394.3036 |   2394.3042 |   2394.1959 |   2394.3003 |   2394.3028 |   2394.3049 |   2394.3059 |   2394.2964 |   2394.3064 |   2394.3038 |   2394.3047 |   2394.3054 |   2394.3075 |   2394.2942 |   2394.3028 |   2394.3071 |   2394.3035 |   2394.3039 |   2394.2325 |   2394.3021 |   2394.3032 |   2394.3041 |   2394.3031 |   2394.0857 |   2394.2985 |   2394.3010 |   2393.9055 |   2394.2361 |   2394.3019 |   2394.3019 |   2394.2865 |   2394.2776 |   2394.3029 |   2394.3028 |    2394.3027 |    2394.3061 |    2394.2848 |    2394.3020 |    2394.3042 |    2394.3045 |    2394.3033 |    2394.3010 |   2394.0520 |   2393.9462 |   2394.1531 |   2394.3345 |   2394.3348 |   2394.3373 |   2394.3364 |   2394.3337 |   2394.0019 |   2394.3296 |    2394.3287 |    2394.2956 |    2393.7233 |    2394.1819 |    2394.3334 |    2394.3324 |    2394.2875 |    2394.3310 |    2394.3337 |    2394.3304 |    2394.3337 |    2393.7583 |    2394.3360 |    2394.3322 |    2394.3341 |    2394.3290 |    2394.3347 |    2394.3343 |    2394.0962 |    2394.3318 |    2394.3360 |    2394.3349 |    2394.3377 |    2394.1144 |    2394.3302 |    2394.3325 |    2394.3275 |    2394.0985 |    2394.3287 |    2394.3277 |    2394.3300 |    2393.8971 |    2393.9112 |    2394.3252 |    2394.3240 |    2394.3302 |    2394.3302 |    2393.7228 |    2394.3281 |    2394.2666 |    2394.2391 |    2394.2393 |    2394.3243 |    2394.3269 |
+|          CPI         |    1.3326 |    1.4244 |    1.4708 |    1.4346 |    1.5260 |    1.3575 |    1.4432 |    1.4740 |    1.4612 |    1.4256 |      1.4151 |      1.4984 |      1.4337 |      1.3697 |      1.3721 |      1.4215 |      1.4908 |      1.6159 |      1.6174 |      1.5214 |      1.5276 |      1.6792 |      1.5907 |      1.3673 |      1.5838 |      1.5239 |      1.5931 |      1.6620 |      1.4211 |      1.5531 |      1.5602 |      1.6043 |      1.6131 |      1.5983 |      1.6370 |      1.7494 |      1.4881 |      1.3872 |      1.3444 |      1.3673 |      1.3628 |      1.3902 |      1.3630 |      1.4019 |      1.4230 |      1.3766 |      1.3000 |      1.3007 |      1.3612 |      1.3709 |      1.3756 |      1.3742 |      1.3671 |      1.5702 |     1.5230 |     1.3731 |     1.3472 |     1.3517 |     1.5282 |     1.4592 |     1.4538 |     1.3841 |     1.3915 |     1.4078 |      1.4063 |      1.5039 |      1.3168 |      1.4530 |      1.3765 |      1.3159 |      1.3821 |      1.5987 |      1.4602 |      1.4083 |      1.4986 |      1.3977 |      1.4553 |      1.4421 |      1.5421 |      1.4282 |      1.2730 |      1.2846 |      1.4095 |      1.4516 |      1.4425 |      1.4687 |      1.3760 |      1.4164 |      1.5962 |      1.5500 |      1.5147 |      1.4184 |      1.3684 |      1.3834 |      1.5107 |      1.3199 |      1.4096 |      1.4116 |      1.4240 |      1.4222 |       1.4040 |       1.4638 |       1.4617 |       1.4632 |       1.3177 |       1.3456 |       1.4065 |       1.5612 |      1.4599 |      1.3305 |      1.3912 |      1.3896 |      1.4672 |      1.3665 |      1.2947 |      1.3312 |      1.3612 |      1.4304 |       1.3728 |       1.3904 |       1.3233 |       1.3343 |       1.3856 |       1.3705 |       1.4157 |       1.5736 |       1.5702 |       1.4445 |       1.3647 |       1.6139 |       1.5578 |       1.4946 |       1.5577 |       1.3827 |       1.5480 |       1.5352 |       1.4467 |       1.5176 |       1.3972 |       1.5044 |       1.5069 |       1.6496 |       1.6002 |       1.6060 |       1.7008 |       1.5845 |       1.5559 |       1.5481 |       1.6336 |       1.5417 |       1.5367 |       1.5369 |       1.5352 |       1.5340 |       1.5779 |       1.5660 |       1.4501 |       1.5639 |       1.5206 |       1.5241 |       1.5491 |       1.4480 |
+|     DP [MFLOP/s]     | 2162.5341 | 2103.9395 | 2129.0580 | 2158.7871 | 2095.6846 | 2131.7992 | 2123.5242 | 2136.4264 | 2099.1775 | 2115.1785 |   2107.7603 |   2156.3680 |   2126.2547 |   2141.0117 |   2108.8126 |   2145.0002 |   2141.1908 |   2144.5912 |   2127.5879 |   2137.5901 |   2157.2543 |   2102.4741 |   2156.9123 |   2108.8090 |   2150.4909 |   2115.2603 |   2096.9853 |   2098.1394 |   2129.4126 |   2151.5034 |   2126.1662 |   2122.5594 |   2121.1769 |   2156.1547 |   2102.6818 |   2099.9860 |   2102.9305 |   2142.5192 |   2120.1581 |   2119.9678 |   2120.3572 |   2125.4441 |   2120.1035 |   2129.0028 |   2127.3303 |   2105.1123 |   2108.9722 |   2155.4895 |   2107.0359 |   2125.2355 |   2103.7397 |   2152.1490 |   2098.6297 |   2095.6525 |  2115.0855 |  2130.2674 |  2105.2009 |  2123.0823 |  2131.6235 |  2120.7926 |  2129.4961 |  2145.2884 |  2127.4713 |  2129.5744 |   2122.4387 |   2125.0230 |   2139.0950 |   2096.2281 |   2132.2412 |   2116.6895 |   2107.0677 |   2114.7897 |   2115.1301 |   2109.1345 |   2142.4804 |   2123.2501 |   2118.4445 |   2130.2198 |   2101.2070 |   2146.4134 |   2148.1920 |   2168.6320 |   2124.6345 |   2100.9190 |   2107.9865 |   2118.0402 |   2123.3004 |   2120.7136 |   2108.9833 |   2092.4540 |   2092.6748 |   2152.1618 |   2138.7456 |   2154.3095 |   2140.5012 |   2161.5940 |   2124.5788 |   2100.1725 |   2106.6195 |   2127.1777 |    2100.7675 |    2106.8505 |    2120.9121 |    2131.5681 |    2144.8305 |    2127.8706 |    2152.7633 |    2137.0809 |   2116.5956 |   2119.6230 |   2105.5510 |   2102.5352 |   2124.2614 |   2128.2657 |   2132.3589 |   2107.7024 |   2103.2030 |   2104.1868 |    2105.1964 |    2119.1754 |    2101.4539 |    2141.2473 |    2118.8376 |    2096.7037 |    2096.4077 |    2101.9315 |    2121.1248 |    2124.1366 |    2109.8049 |    2119.7400 |    2121.3134 |    2125.0682 |    2128.4384 |    2128.1659 |    2119.3627 |    2096.0999 |    2113.8331 |    2126.8978 |    2107.9344 |    2110.9614 |    2101.0823 |    2110.5745 |    2091.7043 |    2103.9348 |    2121.1689 |    2095.3337 |    2098.7797 |    2107.6607 |    2095.3553 |    2124.6627 |    2132.9064 |    2106.2898 |    2091.8145 |    2098.2752 |    2112.7832 |    2121.8610 |    2130.4015 |    2117.3721 |    2112.4725 |    2128.1677 |    2102.7089 |    2112.0732 |
+|   AVX DP [MFLOP/s]   | 2045.5231 | 1994.7084 | 2021.2573 | 2051.7128 | 1993.1334 | 2023.8130 | 2018.7744 | 2032.1379 | 1998.5546 | 2014.5671 |   1997.2009 |   2045.3986 |   2018.9416 |   2035.9012 |   2004.5991 |   2038.3172 |   2035.9175 |   2039.7705 |   2026.3140 |   2035.9199 |   2047.5587 |   1997.7225 |   2050.1038 |   1999.8907 |   2039.3473 |   2011.1904 |   1996.7429 |   1997.8028 |   2022.7347 |   2045.4582 |   2017.0344 |   2017.9182 |   2016.9812 |   2045.7884 |   1993.4598 |   1997.3431 |   2002.9109 |   2040.3455 |   2015.9224 |   2014.6250 |   2013.0521 |   2019.0110 |   2015.9274 |   2026.4104 |   2025.9137 |   2001.3144 |   1998.1264 |   2045.3513 |   2002.2326 |   2020.1835 |   1995.8411 |   2045.8111 |   1994.8888 |   1995.8829 |  2014.4782 |  2026.0739 |  1996.3945 |  2014.5094 |  2026.6821 |  2015.8082 |  2022.1829 |  2042.2022 |  2026.1978 |  2024.4088 |   2017.3100 |   2019.2242 |   2031.9750 |   1993.1665 |   2023.8274 |   2006.6881 |   1996.9894 |   2014.2011 |   2014.5205 |   2006.5633 |   2037.1950 |   2016.9482 |   2014.5192 |   2025.4351 |   1995.5013 |   2035.4095 |   2035.4013 |   2054.0727 |   2014.5045 |   1995.5161 |   2004.0996 |   2014.3954 |   2016.9109 |   2016.4408 |   2006.6276 |   1992.9284 |   1993.1342 |   2039.2235 |   2027.7452 |   2044.7259 |   2035.3838 |   2053.4865 |   2018.5606 |   1996.3568 |   2002.7201 |   2025.9087 |    1999.8301 |    2000.6253 |    2015.6594 |    2026.5400 |    2035.3312 |    2017.8963 |    2047.7301 |    2035.4333 |   2015.7486 |   2014.5770 |   2001.7712 |   1994.5776 |   2019.0290 |   2022.5501 |   2023.2111 |   1997.1344 |   1999.7418 |   2003.8210 |    2003.7044 |    2014.9888 |    1996.2835 |    2032.9286 |    2013.4744 |    1993.6780 |    1996.5131 |    2001.9695 |    2017.2790 |    2013.5443 |    2002.0019 |    2015.4929 |    2016.9310 |    2016.0479 |    2023.2498 |    2021.8147 |    2018.1297 |    1995.8501 |    2009.5908 |    2016.9478 |    1998.8705 |    2006.5594 |    1996.6340 |    2003.4033 |    1992.2071 |    2003.7826 |    2017.4129 |    1992.0622 |    1994.6606 |    2003.3841 |    1992.3374 |    2017.5308 |    2022.9544 |    1996.2345 |    1992.3194 |    1997.6466 |    2009.4744 |    2017.2276 |    2022.5830 |    2013.5001 |    2007.8483 |    2020.1536 |    1993.7495 |    1999.6862 |
+|  AVX512 DP [MFLOP/s] | 2045.5231 | 1994.7084 | 2021.2573 | 2051.7128 | 1993.1334 | 2023.8130 | 2018.7744 | 2032.1379 | 1998.5546 | 2014.5671 |   1997.2009 |   2045.3986 |   2018.9416 |   2035.9012 |   2004.5991 |   2038.3172 |   2035.9175 |   2039.7705 |   2026.3140 |   2035.9199 |   2047.5587 |   1997.7225 |   2050.1038 |   1999.8907 |   2039.3473 |   2011.1904 |   1996.7429 |   1997.8028 |   2022.7347 |   2045.4582 |   2017.0344 |   2017.9182 |   2016.9812 |   2045.7884 |   1993.4598 |   1997.3431 |   2002.9109 |   2040.3455 |   2015.9224 |   2014.6250 |   2013.0521 |   2019.0110 |   2015.9274 |   2026.4104 |   2025.9137 |   2001.3144 |   1998.1264 |   2045.3513 |   2002.2326 |   2020.1835 |   1995.8411 |   2045.8111 |   1994.8888 |   1995.8829 |  2014.4782 |  2026.0739 |  1996.3945 |  2014.5094 |  2026.6821 |  2015.8082 |  2022.1829 |  2042.2022 |  2026.1978 |  2024.4088 |   2017.3100 |   2019.2242 |   2031.9750 |   1993.1665 |   2023.8274 |   2006.6881 |   1996.9894 |   2014.2011 |   2014.5205 |   2006.5633 |   2037.1950 |   2016.9482 |   2014.5192 |   2025.4351 |   1995.5013 |   2035.4095 |   2035.4013 |   2054.0727 |   2014.5045 |   1995.5161 |   2004.0996 |   2014.3954 |   2016.9109 |   2016.4408 |   2006.6276 |   1992.9284 |   1993.1342 |   2039.2235 |   2027.7452 |   2044.7259 |   2035.3838 |   2053.4865 |   2018.5606 |   1996.3568 |   2002.7201 |   2025.9087 |    1999.8301 |    2000.6253 |    2015.6594 |    2026.5400 |    2035.3312 |    2017.8963 |    2047.7301 |    2035.4333 |   2015.7486 |   2014.5770 |   2001.7712 |   1994.5776 |   2019.0290 |   2022.5501 |   2023.2111 |   1997.1344 |   1999.7418 |   2003.8210 |    2003.7044 |    2014.9888 |    1996.2835 |    2032.9286 |    2013.4744 |    1993.6780 |    1996.5131 |    2001.9695 |    2017.2790 |    2013.5443 |    2002.0019 |    2015.4929 |    2016.9310 |    2016.0479 |    2023.2498 |    2021.8147 |    2018.1297 |    1995.8501 |    2009.5908 |    2016.9478 |    1998.8705 |    2006.5594 |    1996.6340 |    2003.4033 |    1992.2071 |    2003.7826 |    2017.4129 |    1992.0622 |    1994.6606 |    2003.3841 |    1992.3374 |    2017.5308 |    2022.9544 |    1996.2345 |    1992.3194 |    1997.6466 |    2009.4744 |    2017.2276 |    2022.5830 |    2013.5001 |    2007.8483 |    2020.1536 |    1993.7495 |    1999.6862 |
+|   Packed [MUOPS/s]   |  255.9771 |  249.6010 |  252.9226 |  256.7304 |  249.3919 |  253.2465 |  252.6047 |  254.2772 |  250.0744 |  252.0692 |    249.9127 |    255.9404 |    252.6260 |    254.7438 |    250.8279 |    255.0482 |    254.7460 |    255.2265 |    253.5388 |    254.7410 |    256.2176 |    249.9730 |    256.5257 |    250.2561 |    255.1835 |    251.6604 |    249.8446 |    249.9759 |    253.1094 |    255.9402 |    252.3905 |    252.4939 |    252.3765 |    255.9884 |    249.4429 |    249.9177 |    250.6108 |    255.2945 |    252.2440 |    252.0835 |    251.8971 |    252.6404 |    252.2444 |    253.5637 |    253.4917 |    250.4229 |    250.0353 |    255.9333 |    250.5427 |    252.7807 |    249.7383 |    255.9850 |    249.6129 |    249.7311 |   252.0581 |   253.5137 |   249.8088 |   252.0743 |   253.5905 |   252.2306 |   253.0354 |   255.5388 |   253.5243 |   253.3155 |    252.4236 |    252.6627 |    254.2650 |    249.3968 |    253.2466 |    251.1032 |    249.8848 |    252.0234 |    252.0634 |    251.0710 |    254.9055 |    252.3753 |    252.0684 |    253.4342 |    249.6930 |    254.6913 |    254.6931 |    257.0305 |    252.0761 |    249.6940 |    250.7650 |    252.0523 |    252.3709 |    252.3088 |    251.0782 |    249.3617 |    249.3875 |    255.1714 |    253.7381 |    255.8612 |    254.6793 |    256.9564 |    252.5801 |    249.8017 |    250.6005 |    253.4884 |     250.2368 |     250.3377 |     252.2127 |     253.5732 |     254.6794 |     252.4993 |     256.2223 |     254.6801 |    252.2171 |    252.0770 |    250.4738 |    249.5808 |    252.6368 |    253.0849 |    253.1633 |    249.9112 |    250.2248 |    250.7280 |     250.7223 |     252.1272 |     249.7965 |     254.3836 |     251.9398 |     249.4604 |     249.8097 |     250.4930 |     252.4130 |     251.9567 |     250.5090 |     252.1903 |     252.3700 |     252.2671 |     253.1623 |     252.9938 |     252.5185 |     249.7335 |     251.4606 |     252.3809 |     250.1287 |     251.0764 |     249.8366 |     250.6912 |     249.2715 |     250.7196 |     252.4294 |     249.2592 |     249.5849 |     250.6763 |     249.2930 |     252.4495 |     253.1324 |     249.7907 |     249.2855 |     249.9614 |     251.4416 |     252.4112 |     253.0920 |     251.9409 |     251.2417 |     252.7849 |     249.4810 |     250.2364 |
+|   Scalar [MUOPS/s]   |  116.4375 |  108.7062 |  107.2698 |  106.5416 |  102.0508 |  107.4464 |  104.2340 |  103.7685 |  100.1127 |  100.1148 |    110.0341 |    110.4382 |    106.7965 |    104.5982 |    103.7075 |    106.1660 |    104.7605 |    104.3104 |    100.7747 |    101.1682 |    109.1501 |    104.2363 |    106.2831 |    108.3789 |    110.6135 |    103.5468 |     99.7388 |     99.8355 |    106.1427 |    105.5293 |    108.6095 |    104.1330 |    103.6880 |    109.8366 |    108.7011 |    102.1432 |     99.5257 |    101.6710 |    103.7282 |    104.8319 |    106.7738 |    105.9051 |    103.6692 |    102.0675 |    100.9117 |    103.2807 |    110.3067 |    109.6094 |    104.2761 |    104.5365 |    107.3822 |    105.8206 |    103.2373 |     99.2781 |   100.1106 |   103.6846 |   108.2874 |   108.0516 |   104.4309 |   104.4752 |   106.7881 |   102.5592 |   100.7744 |   104.6369 |    104.6091 |    105.2795 |    106.5837 |    102.5597 |    107.8774 |    109.4671 |    109.5561 |    100.0920 |    100.1129 |    102.0700 |    104.7731 |    105.7885 |    103.4182 |    104.2750 |    105.1951 |    110.4737 |    112.2548 |    114.0164 |    109.6039 |    104.8939 |    103.3817 |    103.1390 |    105.8755 |    103.7653 |    101.8562 |     99.0342 |     99.0493 |    112.4013 |    110.4604 |    109.0427 |    104.6048 |    107.5663 |    105.4981 |    103.3015 |    103.3784 |    100.7695 |     100.4215 |     105.7061 |     104.7422 |     104.5167 |     108.9733 |     109.4497 |     104.5211 |     101.1457 |    100.3499 |    104.5362 |    103.2749 |    107.4404 |    104.7160 |    105.1834 |    108.6239 |    110.0292 |    102.9471 |     99.8652 |     100.9736 |     103.6794 |     104.6484 |     107.7836 |     104.8521 |     102.5244 |      99.4034 |      99.4684 |     103.3395 |     110.0649 |     107.2853 |     103.7398 |     103.8751 |     108.4981 |     104.6764 |     105.8172 |     100.7284 |      99.7452 |     103.7188 |     109.4251 |     108.5241 |     103.8891 |     103.9336 |     106.6397 |      99.0061 |      99.6586 |     103.2505 |     102.7686 |     103.6143 |     103.7701 |     102.5162 |     106.6157 |     109.4258 |     109.5325 |      99.0039 |     100.1174 |     102.7942 |     104.1178 |     107.2802 |     103.3652 |     104.1028 |     107.4826 |     108.4349 |     111.8357 |
+|  Vectorization ratio |   68.7344 |   69.6612 |   70.2187 |   70.6717 |   70.9623 |   70.2111 |   70.7896 |   71.0181 |   71.4117 |   71.5732 |     69.4305 |     69.8568 |     70.2866 |     70.8917 |     70.7483 |     70.6086 |     70.8599 |     70.9876 |     71.5578 |     71.5747 |     70.1260 |     70.5721 |     70.7055 |     69.7802 |     69.7610 |     70.8489 |     71.4692 |     71.4602 |     70.4545 |     70.8055 |     69.9143 |     70.8006 |     70.8794 |     69.9756 |     69.6488 |     70.9871 |     71.5752 |     71.5180 |     70.8606 |     70.6284 |     70.2307 |     70.4626 |     70.8724 |     71.2996 |     71.5263 |     70.8002 |     69.3883 |     70.0146 |     70.6115 |     70.7441 |     69.9311 |     70.7521 |     70.7419 |     71.5543 |    71.5731 |    70.9728 |    69.7602 |    69.9962 |    70.8311 |    70.7111 |    70.3221 |    71.3600 |    71.5567 |    70.7679 |     70.7004 |     70.5876 |     70.4630 |     70.8601 |     70.1273 |     69.6406 |     69.5204 |     71.5741 |     71.5731 |     71.0965 |     70.8704 |     70.4637 |     70.9080 |     70.8492 |     70.3582 |     69.7469 |     69.4085 |     69.2717 |     69.6959 |     70.4181 |     70.8082 |     70.9624 |     70.4462 |     70.8585 |     71.1402 |     71.5742 |     71.5732 |     69.4207 |     69.6703 |     70.1174 |     70.8852 |     70.4912 |     70.5377 |     70.7447 |     70.7953 |     71.5548 |      71.3620 |      70.3109 |      70.6567 |      70.8127 |      70.0337 |      69.7610 |      71.0262 |      71.5744 |     71.5374 |     70.6864 |     70.8056 |     69.9064 |     70.6967 |     70.6412 |     69.9757 |     69.4313 |     70.8507 |     71.5154 |      71.2895 |      70.8607 |      70.4754 |      70.2393 |      70.6125 |      70.8725 |      71.5350 |      71.5773 |      70.9519 |      69.5971 |      70.0148 |      70.8539 |      70.8417 |      69.9256 |      70.7476 |      70.5089 |      71.4850 |      71.4589 |      70.7982 |      69.7559 |      69.7412 |      70.7326 |      70.6212 |      70.1566 |      71.5726 |      71.5568 |      70.9709 |      70.8067 |      70.6641 |      70.7233 |      70.8603 |      70.3074 |      69.8184 |      69.5170 |      71.5742 |      71.4015 |      70.9814 |      70.7968 |      70.2307 |      70.9081 |      70.7037 |      70.1659 |      69.7038 |      69.1123 |
++----------------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
++---------------------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+
+|           Metric          |     Sum     |    Min    |    Max    |    Avg    |  %ile 25  |  %ile 50  |  %ile 75  |
++---------------------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+
+|  Runtime (RDTSC) [s] STAT | 227870.7520 | 1387.9960 | 1418.7940 | 1406.6096 | 1402.7540 | 1403.4690 | 1417.8120 |
+| Runtime unhalted [s] STAT | 223022.9884 | 1371.0584 | 1379.0736 | 1376.6851 | 1375.6709 | 1376.8669 | 1378.0232 |
+|      Clock [MHz] STAT     | 387869.7806 | 2393.7228 | 2394.3377 | 2394.2579 | 2394.2666 | 2394.3051 | 2394.3196 |
+|          CPI STAT         |    236.5684 |    1.2730 |    1.7494 |    1.4603 |    1.3821 |    1.4445 |    1.5367 |
+|     DP [MFLOP/s] STAT     | 343576.3434 | 2091.7043 | 2168.6320 | 2120.8416 | 2106.2898 | 2120.3572 | 2130.2198 |
+|   AVX DP [MFLOP/s] STAT   | 326493.6947 | 1992.0622 | 2054.0727 | 2015.3932 | 1999.8907 | 2015.6594 | 2025.4351 |
+|  AVX512 DP [MFLOP/s] STAT | 326493.6947 | 1992.0622 | 2054.0727 | 2015.3932 | 1999.8907 | 2015.6594 | 2025.4351 |
+|   Packed [MUOPS/s] STAT   |  40853.5317 |  249.2592 |  257.0305 |  252.1823 |  250.2561 |  252.2127 |  253.4342 |
+|   Scalar [MUOPS/s] STAT   |  16999.0071 |   99.0039 |  116.4375 |  104.9321 |  103.5468 |  104.8319 |  108.6239 |
+|  Vectorization ratio STAT |  11440.9340 |   68.7344 |   71.5773 |   70.6230 |   70.1659 |   70.7419 |   70.9709 |
++---------------------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+
+

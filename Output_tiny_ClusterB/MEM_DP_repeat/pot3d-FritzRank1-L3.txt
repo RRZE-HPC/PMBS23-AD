@@ -1,0 +1,85 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            1
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            1
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank = 1171.0
+ 
+ Estimated load imbalance =   0.00 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_780329_0_f2158.csv in CSV format.
+Group: 1
++-------------------------+---------+-----------------+
+|          Event          | Counter |    f2158:0:0    |
++-------------------------+---------+-----------------+
+|   Runtime (RDTSC) [s]   |   TSC   |        12223.15 |
+|    INSTR_RETIRED_ANY    |  FIXC0  |   7577875653667 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  24359715572565 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  24359315239280 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 146158293435390 |
+|     L2_LINES_IN_ALL     |   PMC0  |   3121331692945 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |      1461727701 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   3119853107434 |
++-------------------------+---------+-----------------+
+
++----------------------------------+-------------+
+|              Metric              |  f2158:0:0  |
++----------------------------------+-------------+
+|        Runtime (RDTSC) [s]       |  12223.1500 |
+|       Runtime unhalted [s]       |  12179.9261 |
+|            Clock [MHz]           |   2000.0216 |
+|                CPI               |      3.2146 |
+|   L3 load bandwidth [MBytes/s]   |  16343.1872 |
+|   L3 load data volume [GBytes]   | 199765.2283 |
+|   L3 evict bandwidth [MBytes/s]  |  16335.4454 |
+|   L3 evict data volume [GBytes]  | 199670.5989 |
+| Dropped CLs bandwidth [MBytes/s] |      7.6536 |
+| Dropped CLs data volume [GBytes] |     93.5506 |
+|      L3 bandwidth [MBytes/s]     |  32678.6325 |
+|      L3 data volume [GBytes]     | 399435.8272 |
++----------------------------------+-------------+
+

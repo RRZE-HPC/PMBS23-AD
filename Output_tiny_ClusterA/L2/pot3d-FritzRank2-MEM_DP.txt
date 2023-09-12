@@ -1,0 +1,108 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            2
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            2
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  585.5
+ 
+ Estimated load imbalance =   0.17 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Group: 1
++-----------------------+---------+----------------+----------------+
+|         Event         | Counter |    f1206:0:0   |    f1206:1:1   |
++-----------------------+---------+----------------+----------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |  3790416632714 |  4026728008477 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 16008975166121 | 16011156692972 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 16008978274752 | 16011159701184 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 80044875830605 | 80055783464860 |
+|    L1D_REPLACEMENT    |   PMC0  |  1562938110103 |  1560233968158 |
+|    L2_TRANS_L1D_WB    |   PMC1  |   441727353988 |   441022254731 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |       80879518 |       84478529 |
++-----------------------+---------+----------------+----------------+
+
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+|            Event           | Counter |       Sum       |       Min      |       Max      |       Avg      |
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  |   7817144641191 |  3790416632714 |  4026728008477 |   3.908572e+12 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  |  32020131859093 | 16008975166121 | 16011156692972 |       nil      |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  |  32020137975936 | 16008978274752 | 16011159701184 | 16010068987968 |
+|     TOPDOWN_SLOTS STAT     |  FIXC3  | 160100659295465 | 80044875830605 | 80055783464860 |       nil      |
+|    L1D_REPLACEMENT STAT    |   PMC0  |   3123172078261 |  1560233968158 |  1562938110103 |   1.561586e+12 |
+|    L2_TRANS_L1D_WB STAT    |   PMC1  |    882749608719 |   441022254731 |   441727353988 |   4.413748e+11 |
+| ICACHE_64B_IFTAG_MISS STAT |   PMC2  |       165358047 |       80879518 |       84478529 |   8.267902e+07 |
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+
++--------------------------------+-------------+-------------+
+|             Metric             |  f1206:0:0  |  f1206:1:1  |
++--------------------------------+-------------+-------------+
+|       Runtime (RDTSC) [s]      |   6710.6330 |   6710.6340 |
+|      Runtime unhalted [s]      |   6686.2678 |   6687.1728 |
+|           Clock [MHz]          |   2394.3062 |   2394.3083 |
+|               CPI              |      4.2235 |      3.9762 |
+|  L2D load bandwidth [MBytes/s] |  14905.9022 |  14880.1103 |
+|  L2D load data volume [GBytes] | 100028.0390 |  99854.9740 |
+| L2D evict bandwidth [MBytes/s] |   4212.7994 |   4206.0742 |
+| L2D evict data volume [GBytes] |  28270.5507 |  28225.4243 |
+|     L2 bandwidth [MBytes/s]    |  19119.4729 |  19086.9901 |
+|     L2 data volume [GBytes]    | 128303.7660 | 128085.8049 |
++--------------------------------+-------------+-------------+
+
++-------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                Metric               |     Sum     |     Min     |     Max     |     Avg     |   %ile 25   |   %ile 50   |   %ile 75   |
++-------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|       Runtime (RDTSC) [s] STAT      |  13421.2670 |   6710.6330 |   6710.6340 |   6710.6335 |   6710.6330 |   6710.6330 |   6710.6340 |
+|      Runtime unhalted [s] STAT      |  13373.4406 |   6686.2678 |   6687.1728 |   6686.7203 |   6686.2678 |   6686.2678 |   6687.1728 |
+|           Clock [MHz] STAT          |   4788.6145 |   2394.3062 |   2394.3083 |   2394.3072 |   2394.3062 |   2394.3062 |   2394.3083 |
+|               CPI STAT              |      8.1997 |      3.9762 |      4.2235 |      4.0998 |      3.9762 |      3.9762 |      4.2235 |
+|  L2D load bandwidth [MBytes/s] STAT |  29786.0125 |  14880.1103 |  14905.9022 |  14893.0063 |  14880.1103 |  14880.1103 |  14905.9022 |
+|  L2D load data volume [GBytes] STAT | 199883.0130 |  99854.9740 | 100028.0390 |  99941.5065 | 100028.0390 | 100028.0390 |  99854.9740 |
+| L2D evict bandwidth [MBytes/s] STAT |   8418.8736 |   4206.0742 |   4212.7994 |   4209.4368 |   4206.0742 |   4206.0742 |   4212.7994 |
+| L2D evict data volume [GBytes] STAT |  56495.9750 |  28225.4243 |  28270.5507 |  28247.9875 |  28225.4243 |  28225.4243 |  28270.5507 |
+|     L2 bandwidth [MBytes/s] STAT    |  38206.4630 |  19086.9901 |  19119.4729 |  19103.2315 |  19086.9901 |  19086.9901 |  19119.4729 |
+|     L2 data volume [GBytes] STAT    | 256389.5709 | 128085.8049 | 128303.7660 | 128194.7854 | 128085.8049 | 128085.8049 | 128303.7660 |
++-------------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+

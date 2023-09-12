@@ -1,0 +1,63 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+[MPI0000]: 01 tasks, host f0608.nhr.fau.de, mpi_rank_x: 00, mpi_rank_y: 00, mpi_peer_left: 00, mpi_peer_right: 00, mpi_peer_top: 00, mpi_peer_bot: 00, LSIZEX: 4096 LSIZEY: 16384 (18.50 GB), pid: 2604457
+[MPI0000]: GSIZEX: 4096, GSIZEY: 16384 (18.50 GB) NMPIX: 1 NMPIY: 1 
+[MPI0000]: Wct: 23140.70 s, (38567837.77 us/iter), Tswp_nc: 0.00 s (0.17 us/iter), Tswp_c 1.55 s (2578.63 us/iter), MLUP/s: 1.74 
+[GLOBAL-INFO] [4096x16384] NITER: 600 NMPI: 1 [01x01 X_MAJOR_ORDER] Wct: 23140.70 s (38567.84 ms/iter), Tswp_nc: 0.00 s (0.17 us/iter), Tswp_c 1.55 s (2578.63 us/iter), P: 11.51 GFLOPs, MLUP/s: 1.74 (FLOPs/site: 6613)
+[MPI#0000]: Tall: 23186.85 sec  Tini: 31.25 sec  Tlbm: 23151.84 sec
+Group: 1
++------------------------------------------+---------+-----------------+
+|                   Event                  | Counter |    f0608:0:0    |
++------------------------------------------+---------+-----------------+
+|            Runtime (RDTSC) [s]           |   TSC   |        23186.82 |
+|             INSTR_RETIRED_ANY            |  FIXC0  |  62488324846129 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  55377251890120 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  55376995260096 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 276886259450600 |
+|              PWR_PKG_ENERGY              |   PWR0  |         2317462 |
+|              PWR_DRAM_ENERGY             |   PWR3  |     189101.6849 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |      1528430592 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |  14563195992486 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |       671088640 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |  35335346350747 |
+|               CAS_COUNT_RD               | MBOX0C0 |     95640844612 |
+|               CAS_COUNT_WR               | MBOX0C1 |     93954586800 |
+|               CAS_COUNT_RD               | MBOX1C0 |     95643278438 |
+|               CAS_COUNT_WR               | MBOX1C1 |     93946920271 |
+|               CAS_COUNT_RD               | MBOX2C0 |     95630005675 |
+|               CAS_COUNT_WR               | MBOX2C1 |     93947882152 |
+|               CAS_COUNT_RD               | MBOX3C0 |     95680798642 |
+|               CAS_COUNT_WR               | MBOX3C1 |     93951186968 |
+|               CAS_COUNT_RD               | MBOX4C0 |        94525562 |
+|               CAS_COUNT_WR               | MBOX4C1 |       101053073 |
+|               CAS_COUNT_RD               | MBOX5C0 |        94129720 |
+|               CAS_COUNT_WR               | MBOX5C1 |       101569270 |
+|               CAS_COUNT_RD               | MBOX6C0 |        95404547 |
+|               CAS_COUNT_WR               | MBOX6C1 |       103321150 |
+|               CAS_COUNT_RD               | MBOX7C0 |        93785846 |
+|               CAS_COUNT_WR               | MBOX7C1 |       101296255 |
++------------------------------------------+---------+-----------------+
+
++-----------------------------------+-------------+
+|               Metric              |  f0608:0:0  |
++-----------------------------------+-------------+
+|        Runtime (RDTSC) [s]        |  23186.8200 |
+|        Runtime unhalted [s]       |  23128.6855 |
+|            Clock [MHz]            |   2394.3215 |
+|                CPI                |      0.8862 |
+|             Energy [J]            |     2317462 |
+|             Power [W]             |     99.9474 |
+|          Energy DRAM [J]          | 189101.6849 |
+|           Power DRAM [W]          |      8.1556 |
+|            DP [MFLOP/s]           |  12819.8566 |
+|          AVX DP [MFLOP/s]         |  12191.6440 |
+|          Packed [MUOPS/s]         |   1524.0359 |
+|          Scalar [MUOPS/s]         |    628.0808 |
+|  Memory read bandwidth [MBytes/s] |   1057.0771 |
+|  Memory read data volume [GBytes] |  24510.2575 |
+| Memory write bandwidth [MBytes/s] |   1038.4046 |
+| Memory write data volume [GBytes] |  24077.3002 |
+|    Memory bandwidth [MBytes/s]    |   2095.4817 |
+|    Memory data volume [GBytes]    |  48587.5577 |
+|       Operational intensity       |      6.1179 |
++-----------------------------------+-------------+
+

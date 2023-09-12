@@ -1,0 +1,105 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            9
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            9
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  130.1
+ 
+ Estimated load imbalance =   0.76 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_6_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_0_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_3_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_7_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_8_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_2_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_1_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_4_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_688691_5_f2163.csv in CSV format.
+Group: 1
++-----------------------+---------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|         Event         | Counter |    f2163:0:0    |    f2163:1:1   |    f2163:2:2   |    f2163:3:3   |    f2163:4:4   |    f2163:5:5   |    f2163:6:6   |    f2163:7:7   |    f2163:8:8   |
++-----------------------+---------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |    867236642711 |   846828825246 |   846699740892 |   847049821526 |   847695919116 |   849722770145 |   847425649975 |   846202977490 |   847681709154 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |   8086087793268 |  8088467166229 |  8085515244499 |  8088119111645 |  8088595493108 |  8088589879729 |  8088646707032 |  8087586427796 |  8088507542388 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |   8085860159680 |  8088342191680 |  8085405008640 |  8088242171920 |  8088371065440 |  8088393627680 |  8088509686480 |  8087593881440 |  8088434303200 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 329991503470264 | 48530802997374 | 48513091466994 | 48528714669870 | 48531572958648 | 48531539278374 | 48531880242192 | 48525518566776 | 48531045254328 |
+|    L1D_REPLACEMENT    |   PMC0  |    348761800066 |   350137193257 |   350239939728 |   350141934370 |   350130185239 |   350140352190 |   350142960483 |   350139157779 |   347405153808 |
++-----------------------+---------+-----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
++----------------------------+---------+-----------------+----------------+-----------------+---------------+
+|            Event           | Counter |       Sum       |       Min      |       Max       |      Avg      |
++----------------------------+---------+-----------------+----------------+-----------------+---------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  |   7646544056255 |   846202977490 |    867236642711 |  8.496160e+11 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  |  72790115365694 |  8085515244499 |   8088646707032 |  8.087791e+12 |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  |  72789152096160 |  8085405008640 |   8088509686480 | 8087683566240 |
+|     TOPDOWN_SLOTS STAT     |  FIXC3  | 718215668904820 | 48513091466994 | 329991503470264 |      nil      |
+|    L1D_REPLACEMENT STAT    |   PMC0  |   3147238676920 |   347405153808 |    350239939728 |  3.496932e+11 |
++----------------------------+---------+-----------------+----------------+-----------------+---------------+
+
++-------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|             Metric            |  f2163:0:0 |  f2163:1:1 |  f2163:2:2 |  f2163:3:3 |  f2163:4:4 |  f2163:5:5 |  f2163:6:6 |  f2163:7:7 |  f2163:8:8 |
++-------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+|      Runtime (RDTSC) [s]      |  4059.0790 |  4059.0270 |  4059.0470 |  4059.2390 |  4059.2970 |  4059.0720 |  4059.0610 |  4059.0520 |  4059.0470 |
+|      Runtime unhalted [s]     |  4043.0771 |  4044.2593 |  4042.7876 |  4044.2855 |  4044.5451 |  4044.3250 |  4044.3534 |  4043.8220 |  4044.2875 |
+|          Clock [MHz]          |  2000.0399 |  2000.0182 |  2000.0124 |  1999.8578 |  1999.9332 |  2000.0336 |  2000.0190 |  1999.9839 |  2000.0014 |
+|              CPI              |     9.3240 |     9.5515 |     9.5494 |     9.5486 |     9.5419 |     9.5191 |     9.5450 |     9.5575 |     9.5419 |
+| L2D load bandwidth [MBytes/s] |  5498.9704 |  5520.7271 |  5522.3199 |  5520.5135 |  5520.2494 |  5520.7157 |  5520.7718 |  5520.7241 |  5477.6232 |
+| L2D load data volume [GBytes] | 22320.7552 | 22408.7804 | 22415.3561 | 22409.0838 | 22408.3319 | 22408.9825 | 22409.1495 | 22408.9061 | 22233.9298 |
++-------------------------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|               Metric               |     Sum     |     Min    |     Max    |     Avg    |   %ile 25  |   %ile 50  |   %ile 75  |
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|      Runtime (RDTSC) [s] STAT      |  36531.9210 |  4059.0270 |  4059.2970 |  4059.1023 |  4059.0470 |  4059.0610 |  4059.0790 |
+|      Runtime unhalted [s] STAT     |  36395.7425 |  4042.7876 |  4044.5451 |  4043.9714 |  4043.0771 |  4044.2855 |  4044.3250 |
+|          Clock [MHz] STAT          |  17999.8994 |  1999.8578 |  2000.0399 |  1999.9888 |  1999.9332 |  2000.0124 |  2000.0190 |
+|              CPI STAT              |     85.6789 |     9.3240 |     9.5575 |     9.5199 |     9.5191 |     9.5450 |     9.5494 |
+| L2D load bandwidth [MBytes/s] STAT |  49622.6151 |  5477.6232 |  5522.3199 |  5513.6239 |  5498.9704 |  5520.7157 |  5520.7271 |
+| L2D load data volume [GBytes] STAT | 201423.2753 | 22233.9298 | 22415.3561 | 22380.3639 | 22320.7552 | 22408.9061 | 22409.0838 |
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+

@@ -1,0 +1,159 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            5
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            5
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  234.2
+ 
+ Estimated load imbalance =   0.43 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_293050_2_f2164.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_293050_4_f2164.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_293050_0_f2164.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_293050_3_f2164.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_293050_1_f2164.csv in CSV format.
+Group: 1
++------------------------------------------+---------+---------------+---------------+---------------+---------------+---------------+
+|                   Event                  | Counter |   f2164:0:0   |   f2164:1:1   |   f2164:2:2   |   f2164:3:3   |   f2164:4:4   |
++------------------------------------------+---------+---------------+---------------+---------------+---------------+---------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  | 1523950195220 | 1519124024082 | 1519426400378 | 1525510709125 | 1522001357279 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  | 8295519517326 | 8294887089973 | 8299296343441 | 8298313472733 | 8297978887470 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  | 8295258339760 | 8295055242960 | 8298948400720 | 8298391347840 | 8298860184320 |
+|              PWR_PKG_ENERGY              |   PWR0  |   866317.0835 |             0 |             0 |             0 |             0 |
+|              PWR_DRAM_ENERGY             |   PWR3  |    38462.4783 |             0 |             0 |             0 |             0 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |    2897510238 |    2890552860 |    2892871596 |    2890552860 |    2878200070 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |      77049486 |      71494875 |      71633236 |      71510672 |      71266375 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |            25 |            25 |            25 |            25 |            25 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |  604984653492 |  604974524029 |  604974524029 |  604974524029 |  602390403859 |
+|               CAS_COUNT_RD               | MBOX0C0 | 1485230431392 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX0C1 |  442210184085 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_RD               | MBOX1C0 | 1485248445065 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX1C1 |  442210963280 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_RD               | MBOX2C0 |     370148652 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX2C1 |     370089489 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_RD               | MBOX3C0 |     370237295 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX3C1 |     370157492 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_RD               | MBOX4C0 |     370149889 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX4C1 |     370105052 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_RD               | MBOX5C0 |     370180982 |             0 |             0 |             0 |             0 |
+|               CAS_COUNT_WR               | MBOX5C1 |     370117024 |             0 |             0 |             0 |             0 |
++------------------------------------------+---------+---------------+---------------+---------------+---------------+---------------+
+
++-----------------------------------------------+---------+----------------+---------------+---------------+---------------+
+|                     Event                     | Counter |       Sum      |      Min      |      Max      |      Avg      |
++-----------------------------------------------+---------+----------------+---------------+---------------+---------------+
+|             INSTR_RETIRED_ANY STAT            |  FIXC0  |  7610012686084 | 1519124024082 | 1525510709125 |  1.522003e+12 |
+|           CPU_CLK_UNHALTED_CORE STAT          |  FIXC1  | 41485995310943 | 8294887089973 | 8299296343441 |  8.297199e+12 |
+|           CPU_CLK_UNHALTED_REF STAT           |  FIXC2  | 41486513515600 | 8295055242960 | 8298948400720 | 8297302703120 |
+|              PWR_PKG_ENERGY STAT              |   PWR0  |    866317.0835 |             0 |   866317.0835 |   173263.4167 |
+|              PWR_DRAM_ENERGY STAT             |   PWR3  |     38462.4783 |             0 |    38462.4783 |     7692.4957 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE STAT |   PMC0  |    14449687624 |    2878200070 |    2897510238 |  2.889938e+09 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE STAT   |   PMC1  |      362954644 |      71266375 |      77049486 |  7.259093e+07 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE STAT |   PMC2  |            125 |            25 |            25 |            25 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE STAT |   PMC3  |  3022298629438 |  602390403859 |  604984653492 |  6.044597e+11 |
+|               CAS_COUNT_RD STAT               | MBOX0C0 |  1485230431392 |             0 | 1485230431392 |  2.970461e+11 |
+|               CAS_COUNT_WR STAT               | MBOX0C1 |   442210184085 |             0 |  442210184085 |   88442036817 |
+|               CAS_COUNT_RD STAT               | MBOX1C0 |  1485248445065 |             0 | 1485248445065 |  297049689013 |
+|               CAS_COUNT_WR STAT               | MBOX1C1 |   442210963280 |             0 |  442210963280 |   88442192656 |
+|               CAS_COUNT_RD STAT               | MBOX2C0 |      370148652 |             0 |     370148652 |  7.402973e+07 |
+|               CAS_COUNT_WR STAT               | MBOX2C1 |      370089489 |             0 |     370089489 |  7.401790e+07 |
+|               CAS_COUNT_RD STAT               | MBOX3C0 |      370237295 |             0 |     370237295 |      74047459 |
+|               CAS_COUNT_WR STAT               | MBOX3C1 |      370157492 |             0 |     370157492 |  7.403150e+07 |
+|               CAS_COUNT_RD STAT               | MBOX4C0 |      370149889 |             0 |     370149889 |  7.402998e+07 |
+|               CAS_COUNT_WR STAT               | MBOX4C1 |      370105052 |             0 |     370105052 |  7.402101e+07 |
+|               CAS_COUNT_RD STAT               | MBOX5C0 |      370180982 |             0 |     370180982 |  7.403620e+07 |
+|               CAS_COUNT_WR STAT               | MBOX5C1 |      370117024 |             0 |     370117024 |  7.402340e+07 |
++-----------------------------------------------+---------+----------------+---------------+---------------+---------------+
+
++-----------------------------------+-------------+-----------+-----------+-----------+-----------+
+|               Metric              |  f2164:0:0  | f2164:1:1 | f2164:2:2 | f2164:3:3 | f2164:4:4 |
++-----------------------------------+-------------+-----------+-----------+-----------+-----------+
+|        Runtime (RDTSC) [s]        |   4163.6130 | 4163.6300 | 4163.6400 | 4163.6230 | 4163.6270 |
+|        Runtime unhalted [s]       |   4147.7912 | 4147.4703 | 4149.6887 | 4149.1799 | 4149.0158 |
+|            Clock [MHz]            |   2000.0478 | 1999.9466 | 2000.0643 | 1999.9701 | 1999.7749 |
+|                CPI                |      5.4434 |    5.4603 |    5.4621 |    5.4397 |    5.4520 |
+|             Energy [J]            | 866317.0835 |         0 |         0 |         0 |         0 |
+|             Power [W]             |    208.0686 |         0 |         0 |         0 |         0 |
+|          Energy DRAM [J]          |  38462.4783 |         0 |         0 |         0 |         0 |
+|           Power DRAM [W]          |      9.2378 |         0 |         0 |         0 |         0 |
+|            DP [MFLOP/s]           |   1163.8328 | 1163.8039 | 1163.8022 | 1163.8059 | 1158.8336 |
+|          AVX DP [MFLOP/s]         |   1162.4225 | 1162.3982 | 1162.3955 | 1162.4002 | 1157.4339 |
+|          Packed [MUOPS/s]         |    145.9987 |  145.9940 |  145.9942 |  145.9943 |  145.3705 |
+|          Scalar [MUOPS/s]         |      0.0185 |    0.0172 |    0.0172 |    0.0172 |    0.0171 |
+|  Memory read bandwidth [MBytes/s] |  45682.7793 |         0 |         0 |         0 |         0 |
+|  Memory read data volume [GBytes] | 190205.4140 |         0 |         0 |         0 |         0 |
+| Memory write bandwidth [MBytes/s] |  13617.4288 |         0 |         0 |         0 |         0 |
+| Memory write data volume [GBytes] |  56697.7035 |         0 |         0 |         0 |         0 |
+|    Memory bandwidth [MBytes/s]    |  59300.2081 |         0 |         0 |         0 |         0 |
+|    Memory data volume [GBytes]    | 246903.1174 |         0 |         0 |         0 |         0 |
+|       Operational intensity       |      0.0196 |         0 |         0 |         0 |         0 |
++-----------------------------------+-------------+-----------+-----------+-----------+-----------+
+
++----------------------------------------+-------------+-----------+-------------+-------------+-----------+-----------+-----------+
+|                 Metric                 |     Sum     |    Min    |     Max     |     Avg     |  %ile 25  |  %ile 50  |  %ile 75  |
++----------------------------------------+-------------+-----------+-------------+-------------+-----------+-----------+-----------+
+|        Runtime (RDTSC) [s] STAT        |  20818.1330 | 4163.6130 |   4163.6400 |   4163.6266 | 4163.6130 | 4163.6270 | 4163.6300 |
+|        Runtime unhalted [s] STAT       |  20743.1459 | 4147.4703 |   4149.6887 |   4148.6292 | 4147.4703 | 4149.0158 | 4149.1799 |
+|            Clock [MHz] STAT            |   9999.8037 | 1999.7749 |   2000.0643 |   1999.9607 | 1999.7749 | 1999.9701 | 2000.0478 |
+|                CPI STAT                |     27.2575 |    5.4397 |      5.4621 |      5.4515 |    5.4397 |    5.4520 |    5.4603 |
+|             Energy [J] STAT            | 866317.0835 |         0 | 866317.0835 | 173263.4167 |         0 |         0 |         0 |
+|             Power [W] STAT             |    208.0686 |         0 |    208.0686 |     41.6137 |         0 |         0 |         0 |
+|          Energy DRAM [J] STAT          |  38462.4783 |         0 |  38462.4783 |   7692.4957 |         0 |         0 |         0 |
+|           Power DRAM [W] STAT          |      9.2378 |         0 |      9.2378 |      1.8476 |         0 |         0 |         0 |
+|            DP [MFLOP/s] STAT           |   5814.0784 | 1158.8336 |   1163.8328 |   1162.8157 | 1158.8336 | 1163.8039 | 1163.8059 |
+|          AVX DP [MFLOP/s] STAT         |   5807.0503 | 1157.4339 |   1162.4225 |   1161.4101 | 1157.4339 | 1162.3982 | 1162.4002 |
+|          Packed [MUOPS/s] STAT         |    729.3517 |  145.3705 |    145.9987 |    145.8703 |  145.3705 |  145.9942 |  145.9943 |
+|          Scalar [MUOPS/s] STAT         |      0.0872 |    0.0171 |      0.0185 |      0.0174 |    0.0171 |    0.0172 |    0.0172 |
+|  Memory read bandwidth [MBytes/s] STAT |  45682.7793 |         0 |  45682.7793 |   9136.5559 |         0 |         0 |         0 |
+|  Memory read data volume [GBytes] STAT | 190205.4140 |         0 | 190205.4140 |  38041.0828 |         0 |         0 |         0 |
+| Memory write bandwidth [MBytes/s] STAT |  13617.4288 |         0 |  13617.4288 |   2723.4858 |         0 |         0 |         0 |
+| Memory write data volume [GBytes] STAT |  56697.7035 |         0 |  56697.7035 |  11339.5407 |         0 |         0 |         0 |
+|    Memory bandwidth [MBytes/s] STAT    |  59300.2081 |         0 |  59300.2081 |  11860.0416 |         0 |         0 |         0 |
+|    Memory data volume [GBytes] STAT    | 246903.1174 |         0 | 246903.1174 |  49380.6235 |         0 |         0 |         0 |
+|       Operational intensity STAT       |      0.0196 |         0 |      0.0196 |      0.0039 |         0 |         0 |         0 |
++----------------------------------------+-------------+-----------+-------------+-------------+-----------+-----------+-----------+
+

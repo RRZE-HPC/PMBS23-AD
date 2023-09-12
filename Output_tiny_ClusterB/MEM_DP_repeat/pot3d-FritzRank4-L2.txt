@@ -1,0 +1,100 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            4
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            4
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  292.8
+ 
+ Estimated load imbalance =   0.34 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_685097_0_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_685097_2_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_685097_3_f2163.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_685097_1_f2163.csv in CSV format.
+Group: 1
++-----------------------+---------+----------------+----------------+----------------+----------------+
+|         Event         | Counter |    f2163:0:0   |    f2163:1:1   |    f2163:2:2   |    f2163:3:3   |
++-----------------------+---------+----------------+----------------+----------------+----------------+
+|   INSTR_RETIRED_ANY   |  FIXC0  |  1933350606712 |  1906972559709 |  1905689566637 |  1895091864588 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  | 10209456506028 | 10211825191373 | 10209068254536 | 10211300743120 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  | 10208953009600 | 10211500420160 | 10208933170720 | 10211698182240 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 61256739036168 | 61270951148238 | 61254409527216 | 61267804458720 |
+|    L1D_REPLACEMENT    |   PMC0  |   783582389050 |   784951292943 |   784917564297 |   784847226356 |
++-----------------------+---------+----------------+----------------+----------------+----------------+
+
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+|            Event           | Counter |       Sum       |       Min      |       Max      |       Avg      |
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+|   INSTR_RETIRED_ANY STAT   |  FIXC0  |   7641104597646 |  1895091864588 |  1933350606712 |   1.910276e+12 |
+| CPU_CLK_UNHALTED_CORE STAT |  FIXC1  |  40841650695057 | 10209068254536 | 10211825191373 |       nil      |
+|  CPU_CLK_UNHALTED_REF STAT |  FIXC2  |  40841084782720 | 10208933170720 | 10211698182240 | 10210271195680 |
+|     TOPDOWN_SLOTS STAT     |  FIXC3  | 245049904170342 | 61254409527216 | 61270951148238 |       nil      |
+|    L1D_REPLACEMENT STAT    |   PMC0  |   3138298472646 |   783582389050 |   784951292943 |   7.845746e+11 |
++----------------------------+---------+-----------------+----------------+----------------+----------------+
+
++-------------------------------+------------+------------+------------+------------+
+|             Metric            |  f2163:0:0 |  f2163:1:1 |  f2163:2:2 |  f2163:3:3 |
++-------------------------------+------------+------------+------------+------------+
+|      Runtime (RDTSC) [s]      |  5122.5560 |  5122.7600 |  5122.5510 |  5122.5590 |
+|      Runtime unhalted [s]     |  5104.7666 |  5106.1555 |  5104.5687 |  5105.6903 |
+|          Clock [MHz]          |  2000.0836 |  1999.9685 |  2000.0129 |  1999.9065 |
+|              CPI              |     5.2807 |     5.3550 |     5.3572 |     5.3883 |
+| L2D load bandwidth [MBytes/s] |  9789.8926 |  9806.6048 |  9806.5835 |  9805.6894 |
+| L2D load data volume [GBytes] | 50149.2729 | 50236.8827 | 50234.7241 | 50230.2225 |
++-------------------------------+------------+------------+------------+------------+
+
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|               Metric               |     Sum     |     Min    |     Max    |     Avg    |   %ile 25  |   %ile 50  |   %ile 75  |
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|      Runtime (RDTSC) [s] STAT      |  20490.4260 |  5122.5510 |  5122.7600 |  5122.6065 |  5122.5510 |  5122.5560 |  5122.5590 |
+|      Runtime unhalted [s] STAT     |  20421.1811 |  5104.5687 |  5106.1555 |  5105.2953 |  5104.5687 |  5104.7666 |  5105.6903 |
+|          Clock [MHz] STAT          |   7999.9715 |  1999.9065 |  2000.0836 |  1999.9929 |  1999.9065 |  1999.9685 |  2000.0129 |
+|              CPI STAT              |     21.3812 |     5.2807 |     5.3883 |     5.3453 |     5.2807 |     5.3550 |     5.3572 |
+| L2D load bandwidth [MBytes/s] STAT |  39208.7703 |  9789.8926 |  9806.6048 |  9802.1926 |  9789.8926 |  9805.6894 |  9806.5835 |
+| L2D load data volume [GBytes] STAT | 200851.1022 | 50149.2729 | 50236.8827 | 50212.7755 | 50149.2729 | 50230.2225 | 50234.7241 |
++------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+

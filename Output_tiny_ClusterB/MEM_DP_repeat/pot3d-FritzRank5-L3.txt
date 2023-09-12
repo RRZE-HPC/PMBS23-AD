@@ -1,0 +1,117 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            5
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            5
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank =  234.2
+ 
+ Estimated load imbalance =   0.43 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_783139_4_f2158.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_783139_2_f2158.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_783139_0_f2158.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_783139_1_f2158.csv in CSV format.
+Filter script /home/hpc/unrz/unrz139/.modules/likwid-saprap/share/likwid/filter/csv not available. Output file /home/vault/ihpc/ihpc040h/SPEChpc2021/528.pot3d_t/.output_783139_3_f2158.csv in CSV format.
+Group: 1
++-------------------------+---------+----------------+----------------+----------------+----------------+----------------+
+|          Event          | Counter |    f2158:0:0   |    f2158:1:1   |    f2158:2:2   |    f2158:3:3   |    f2158:4:4   |
++-------------------------+---------+----------------+----------------+----------------+----------------+----------------+
+|    INSTR_RETIRED_ANY    |  FIXC0  |  1524547861162 |  1519220435173 |  1518768593942 |  1524517046247 |  1521878298710 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  |  8304482762110 |  8305542872508 |  8305357083429 |  8305709576622 |  8303557580080 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  |  8304078392160 |  8305267815200 |  8305045394480 |  8305310453760 |  8303303692400 |
+|      TOPDOWN_SLOTS      |  FIXC3  | 49826896572660 | 49833257235048 | 49832142500574 | 49834257459732 | 49821345480480 |
+|     L2_LINES_IN_ALL     |   PMC0  |   625872422933 |   625895897360 |   625938588819 |   625899902597 |   623284195630 |
+|   L2_LINES_OUT_SILENT   |   PMC2  |      826563327 |      868351919 |      983104492 |      840047321 |      763464010 |
+| L2_LINES_OUT_NON_SILENT |   PMC3  |   625040693004 |   625022533478 |   624950214108 |   625054643616 |   622515413669 |
++-------------------------+---------+----------------+----------------+----------------+----------------+----------------+
+
++------------------------------+---------+-----------------+----------------+----------------+---------------+
+|             Event            | Counter |       Sum       |       Min      |       Max      |      Avg      |
++------------------------------+---------+-----------------+----------------+----------------+---------------+
+|    INSTR_RETIRED_ANY STAT    |  FIXC0  |   7608932235234 |  1518768593942 |  1524547861162 |  1.521786e+12 |
+|  CPU_CLK_UNHALTED_CORE STAT  |  FIXC1  |  41524649874749 |  8303557580080 |  8305709576622 |  8.304930e+12 |
+|   CPU_CLK_UNHALTED_REF STAT  |  FIXC2  |  41523005748000 |  8303303692400 |  8305310453760 | 8304601149600 |
+|      TOPDOWN_SLOTS STAT      |  FIXC3  | 249147899248494 | 49821345480480 | 49834257459732 |      nil      |
+|     L2_LINES_IN_ALL STAT     |   PMC0  |   3126891007339 |   623284195630 |   625938588819 |  6.253782e+11 |
+|   L2_LINES_OUT_SILENT STAT   |   PMC2  |      4281531069 |      763464010 |      983104492 |  8.563062e+08 |
+| L2_LINES_OUT_NON_SILENT STAT |   PMC3  |   3122583497875 |   622515413669 |   625054643616 |  624516699575 |
++------------------------------+---------+-----------------+----------------+----------------+---------------+
+
++----------------------------------+------------+------------+------------+------------+------------+
+|              Metric              |  f2158:0:0 |  f2158:1:1 |  f2158:2:2 |  f2158:3:3 |  f2158:4:4 |
++----------------------------------+------------+------------+------------+------------+------------+
+|        Runtime (RDTSC) [s]       |  4166.9650 |  4166.9670 |  4166.9680 |  4166.9760 |  4166.9700 |
+|       Runtime unhalted [s]       |  4152.2509 |  4152.7822 |  4152.6912 |  4152.8721 |  4151.7922 |
+|            Clock [MHz]           |  2000.0928 |  2000.0611 |  2000.0689 |  2000.0878 |  2000.0547 |
+|                CPI               |     5.4472 |     5.4670 |     5.4685 |     5.4481 |     5.4561 |
+|   L3 load bandwidth [MBytes/s]   |  9612.7121 |  9613.0681 |  9613.7215 |  9613.1088 |  9572.9483 |
+|   L3 load data volume [GBytes]   | 40055.8351 | 40057.3374 | 40060.0697 | 40057.5938 | 39890.1885 |
+|   L3 evict bandwidth [MBytes/s]  |  9599.9377 |  9599.6542 |  9598.5411 |  9600.1266 |  9561.1407 |
+|   L3 evict data volume [GBytes]  | 40002.6044 | 40001.4421 | 39996.8137 | 40003.4972 | 39840.9865 |
+| Dropped CLs bandwidth [MBytes/s] |    12.6951 |    13.3369 |    15.0994 |    12.9022 |    11.7260 |
+| Dropped CLs data volume [GBytes] |    52.9001 |    55.5745 |    62.9187 |    53.7630 |    48.8617 |
+|      L3 bandwidth [MBytes/s]     | 19212.6498 | 19212.7222 | 19212.2626 | 19213.2354 | 19134.0890 |
+|      L3 data volume [GBytes]     | 80058.4394 | 80058.7796 | 80056.8834 | 80061.0910 | 79731.1750 |
++----------------------------------+------------+------------+------------+------------+------------+
+
++---------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|                 Metric                |     Sum     |     Min    |     Max    |     Avg    |   %ile 25  |   %ile 50  |   %ile 75  |
++---------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+|        Runtime (RDTSC) [s] STAT       |  20834.8460 |  4166.9650 |  4166.9760 |  4166.9692 |  4166.9650 |  4166.9680 |  4166.9700 |
+|       Runtime unhalted [s] STAT       |  20762.3886 |  4151.7922 |  4152.8721 |  4152.4777 |  4151.7922 |  4152.6912 |  4152.7822 |
+|            Clock [MHz] STAT           |  10000.3653 |  2000.0547 |  2000.0928 |  2000.0731 |  2000.0547 |  2000.0689 |  2000.0878 |
+|                CPI STAT               |     27.2869 |     5.4472 |     5.4685 |     5.4574 |     5.4472 |     5.4561 |     5.4670 |
+|   L3 load bandwidth [MBytes/s] STAT   |  48025.5588 |  9572.9483 |  9613.7215 |  9605.1118 |  9572.9483 |  9613.0681 |  9613.1088 |
+|   L3 load data volume [GBytes] STAT   | 200121.0245 | 39890.1885 | 40060.0697 | 40024.2049 | 39890.1885 | 40057.3374 | 40057.5938 |
+|   L3 evict bandwidth [MBytes/s] STAT  |  47959.4003 |  9561.1407 |  9600.1266 |  9591.8801 |  9561.1407 |  9599.6542 |  9599.9377 |
+|   L3 evict data volume [GBytes] STAT  | 199845.3439 | 39840.9865 | 40003.4972 | 39969.0688 | 39840.9865 | 40001.4421 | 40002.6044 |
+| Dropped CLs bandwidth [MBytes/s] STAT |     65.7596 |    11.7260 |    15.0994 |    13.1519 |    11.7260 |    12.9022 |    13.3369 |
+| Dropped CLs data volume [GBytes] STAT |    274.0180 |    48.8617 |    62.9187 |    54.8036 |    48.8617 |    53.7630 |    55.5745 |
+|      L3 bandwidth [MBytes/s] STAT     |  95984.9590 | 19134.0890 | 19213.2354 | 19196.9918 | 19134.0890 | 19212.6498 | 19212.7222 |
+|      L3 data volume [GBytes] STAT     | 399966.3684 | 79731.1750 | 80061.0910 | 79993.2737 | 79731.1750 | 80058.4394 | 80058.7796 |
++---------------------------------------+-------------+------------+------------+------------+------------+------------+------------+
+

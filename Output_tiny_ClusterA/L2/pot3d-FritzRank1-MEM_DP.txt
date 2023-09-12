@@ -1,0 +1,82 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ 
+ POT3D Version 2.21-, updated on 01/14/2019
+ 
+ ### COMMENT from CHECK_INPUT:
+ ### Field solve type:
+ 
+ OPTION = ss              
+ 
+ Total number of MPI ranks =            1
+ 
+ Number of MPI ranks in r =            1
+ Number of MPI ranks in t =            1
+ Number of MPI ranks in p =            1
+ 
+ Global mesh dimension in r =          173
+ Global mesh dimension in t =          361
+ Global mesh dimension in p =         1171
+ 
+ Average # of r mesh pts per rank =  173.0
+ Average # of t mesh pts per rank =  361.0
+ Average # of p mesh pts per rank = 1171.0
+ 
+ Estimated load imbalance =   0.00 %
+ 
+ ### COMMENT from READBR:
+ ### Reading Br file: br_input_small.h5
+ 
+ ### COMMENT from READBR:
+ ### Computed flux balance:
+ 
+ Positive flux =    40.8406785341880     
+ Negative flux =   -42.2138285125426     
+ 
+ ### COMMENT from READBR:
+ ### Flux balance correction:
+ 
+ BR00 (monopole Br field magnitude) =  -0.109271454666673     
+ 
+ ### COMMENT from POT3D:
+ ### Starting CG solve.
+ 
+ ### COMMENT from SOLVE:
+ ### The field solver converged.
+ Number of iterations =        13799
+ 
+ ### COMMENT from GETB:
+ ### Magnetic energy diagnostic:
+ 
+Energy in Br**2 = 5.98186158E+01
+Energy in Bt**2 = 2.19454290E+01
+Energy in Bp**2 = 3.27180068E+01
+Magnetic energy = 1.14482052E+02
+Group: 1
++-----------------------+---------+-----------------+
+|         Event         | Counter |    f1206:0:0    |
++-----------------------+---------+-----------------+
+|  Runtime (RDTSC) [s]  |   TSC   |        12537.17 |
+|   INSTR_RETIRED_ANY   |  FIXC0  |   7575039730830 |
+| CPU_CLK_UNHALTED_CORE |  FIXC1  |  29910326388865 |
+|  CPU_CLK_UNHALTED_REF |  FIXC2  |  29910340349856 |
+|     TOPDOWN_SLOTS     |  FIXC3  | 149551631944325 |
+|    L1D_REPLACEMENT    |   PMC0  |   3123093548950 |
+|    L2_TRANS_L1D_WB    |   PMC1  |    881297812327 |
+| ICACHE_64B_IFTAG_MISS |   PMC2  |        99613260 |
++-----------------------+---------+-----------------+
+
++--------------------------------+-------------+
+|             Metric             |  f1206:0:0  |
++--------------------------------+-------------+
+|       Runtime (RDTSC) [s]      |  12537.1700 |
+|      Runtime unhalted [s]      |  12492.2705 |
+|           Clock [MHz]          |   2394.3055 |
+|               CPI              |      3.9485 |
+|  L2D load bandwidth [MBytes/s] |  15942.8314 |
+|  L2D load data volume [GBytes] | 199877.9871 |
+| L2D evict bandwidth [MBytes/s] |   4498.8670 |
+| L2D evict data volume [GBytes] |  56403.0600 |
+|     L2 bandwidth [MBytes/s]    |  20442.2068 |
+|     L2 data volume [GBytes]    | 256287.4224 |
++--------------------------------+-------------+
+

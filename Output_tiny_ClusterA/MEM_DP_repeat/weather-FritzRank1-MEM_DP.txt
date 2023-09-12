@@ -1,0 +1,61 @@
+WARN: Cannot extract OpenMP vendor from executable or commandline, assuming no OpenMP
+ nx_glob, nz_glob:                  3000                  1250
+ dx,dz:    8.00000000000000        8.00000000000000     
+ dt:   2.666666666666666E-002
+Group: 1
++------------------------------------------+---------+-----------------+
+|                   Event                  | Counter |    f0608:0:0    |
++------------------------------------------+---------+-----------------+
+|            Runtime (RDTSC) [s]           |   TSC   |        30996.57 |
+|             INSTR_RETIRED_ANY            |  FIXC0  | 128874874235153 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |  74037256385265 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |  74037200763360 |
+|               TOPDOWN_SLOTS              |  FIXC3  | 370186281926324 |
+|              PWR_PKG_ENERGY              |   PWR0  |         3122621 |
+|              PWR_DRAM_ENERGY             |   PWR3  |     264954.3488 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |               0 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |  64591378927202 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |               0 |
+| FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE |   PMC3  |   1094943954513 |
+|               CAS_COUNT_RD               | MBOX0C0 |    427438175075 |
+|               CAS_COUNT_WR               | MBOX0C1 |    188147976695 |
+|               CAS_COUNT_RD               | MBOX1C0 |    427379492678 |
+|               CAS_COUNT_WR               | MBOX1C1 |    188112100237 |
+|               CAS_COUNT_RD               | MBOX2C0 |    427417324062 |
+|               CAS_COUNT_WR               | MBOX2C1 |    188114701983 |
+|               CAS_COUNT_RD               | MBOX3C0 |    427434408127 |
+|               CAS_COUNT_WR               | MBOX3C1 |    188133695855 |
+|               CAS_COUNT_RD               | MBOX4C0 |       129574809 |
+|               CAS_COUNT_WR               | MBOX4C1 |       139743937 |
+|               CAS_COUNT_RD               | MBOX5C0 |       129987028 |
+|               CAS_COUNT_WR               | MBOX5C1 |       140280500 |
+|               CAS_COUNT_RD               | MBOX6C0 |       132589156 |
+|               CAS_COUNT_WR               | MBOX6C1 |       143074197 |
+|               CAS_COUNT_RD               | MBOX7C0 |       129892744 |
+|               CAS_COUNT_WR               | MBOX7C1 |       140232765 |
++------------------------------------------+---------+-----------------+
+
++-----------------------------------+-------------+
+|               Metric              |  f0608:0:0  |
++-----------------------------------+-------------+
+|        Runtime (RDTSC) [s]        |  30996.5700 |
+|        Runtime unhalted [s]       |  30922.4956 |
+|            Clock [MHz]            |   2394.2864 |
+|                CPI                |      0.5745 |
+|             Energy [J]            |     3122621 |
+|             Power [W]             |    100.7409 |
+|          Energy DRAM [J]          | 264954.3488 |
+|           Power DRAM [W]          |      8.5479 |
+|            DP [MFLOP/s]           |   2366.4209 |
+|          AVX DP [MFLOP/s]         |    282.5974 |
+|          Packed [MUOPS/s]         |     35.3247 |
+|          Scalar [MUOPS/s]         |   2083.8234 |
+|  Memory read bandwidth [MBytes/s] |   3531.1085 |
+|  Memory read data volume [GBytes] | 109452.2524 |
+| Memory write bandwidth [MBytes/s] |   1554.9009 |
+| Memory write data volume [GBytes] |  48196.5956 |
+|    Memory bandwidth [MBytes/s]    |   5086.0095 |
+|    Memory data volume [GBytes]    | 157648.8480 |
+|       Operational intensity       |      0.4653 |
++-----------------------------------+-------------+
+
