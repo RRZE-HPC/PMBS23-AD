@@ -41,8 +41,8 @@ On the chip level, only memory-bound code shows a clear advantage of Sapphire Ra
 <a name="Description"></a>
 ## B. Description
 
-We provide reproducibility initiative dependencies (Artifact Description or Artifact Evaluation or Computational Results Analysis) appendix at [https://doi.org/10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037). 
-To allow a third party to duplicate the findings, this article provides our extensive performance data artifact and describes further details regarding the software environments, experimental design, and methodology employed for the results shown in the paper, entitled "SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study". 
+To allow a third party to duplicate the findings, this article provides reproducibility initiative dependencies (Artifact Description or Artifact Evaluation or Computational Results Analysis) appendix at [https://doi.org/10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037). 
+In addiotion to our extensive performance data artifact, it further describes details regarding the software environments, experimental design, and methodology employed for the results shown in the paper, entitled "SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study". 
 The computational artifacts will enable experienced performance engineers to reproduce and interpret the data shown in the paper in the appropriate way and to follow the conclusions we draw from it.
 
 <a name="Check-list"></a>
