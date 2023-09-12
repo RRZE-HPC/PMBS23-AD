@@ -41,7 +41,7 @@ On the chip level, only memory-bound code shows a clear advantage of Sapphire Ra
 <a name="Description"></a>
 ## B. Description
 
-We provide an artifact description and an artifact evaluation appendix at [https://doi.org/10.5281/zenodo.8208135](https://doi.org/10.5281/zenodo.8208135). 
+We provide reproducibility initiative dependencies (Artifact Description or Artifact Evaluation or Computational Results Analysis) appendix at [https://doi.org/10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037). 
 To allow a third party to duplicate the findings, this article provides our extensive performance data artifact and describes further details regarding the software environments, experimental design, and methodology employed for the results shown in the paper, entitled "SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study". 
 The computational artifacts will enable experienced performance engineers to reproduce and interpret the data shown in the paper in the appropriate way and to follow the conclusions we draw from it.
 
@@ -132,7 +132,7 @@ This lists comprehensive hardware information on
           - `operational intensity [F/B]`
           - `translation lookaside buffer, TLB` (load misses, store misses)
 
-     - Navigate to the `ITAC-output` repository at [https://tiny.cc/SPEC-PMBS23](https://tiny.cc/SPEC-PMBS23) for additional trace visualization presented, which are outside the paper:
+     - Navigate to the `ITAC-output` repository at [https://doi.org/10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037) for additional trace visualization presented, which are outside the paper:
 
           - `processes timeline` (program structure for functions, messages and collectives operations)
           - `message profile` (messages volume, time, count, transfer rate, communication hotspots and patterns)
