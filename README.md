@@ -251,7 +251,27 @@ Please see the `upshots` and Section 6 of the paper that presents the summary.
 
 <a name="Notes"></a>
 ## I. Notes
-None
+Please cite the work as:
+
+* A. Afzal, G. Hager, and G. Wellein: SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study. [DOI:10.1145/3624062.3624197](https://doi.org/10.1145/3624062.3624197)
+
+Bibtex:  
+> @INPROCEEDINGS{POM2023,  
+>   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   booktitle={2023 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},   
+>   title={{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study},   
+>   year={2023},  
+>   doi={10.1145/3624062.3624197}}
+
+* A. Afzal, G. Hager, and G. Wellein: SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study -- Performance Data Artifact Appendix. [DOI:10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037)
+
+Bibtex:  
+> @INPROCEEDINGS{POM2023,  
+>   author={A. {Afzal} and G. {Hager} and G. {Wellein}},  
+>   booktitle={[online]},   
+>   title={{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study {--} Performance Data Artifact Appendix},   
+>   year={2023},  
+>   doi={10.5281/zenodo.8338037}} 
 
 
 
