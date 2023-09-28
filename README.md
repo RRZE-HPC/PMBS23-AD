@@ -256,23 +256,23 @@ Please cite the work as:
 * A. Afzal, G. Hager, and G. Wellein: SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study. [DOI:10.1145/3624062.3624197](https://doi.org/10.1145/3624062.3624197)
 
 Bibtex:  
-> @INPROCEEDINGS{SPEC2023,  
->   author = {Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},
->   title={{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study},
+> @INPROCEEDINGS{SPEC2023,    
+>   author = {Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},  
+>   title={{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study},  
 >   booktitle={2023 IEEE/ACM Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS)},      
->   doi={10.1145/3624062.3624197},
+>   doi={10.1145/3624062.3624197},   
 >   year={2023}
 > }
 
 * A. Afzal, G. Hager, and G. Wellein: SPEChpc 2021 Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters: A Performance and Energy Case Study -- Performance Data Artifact Appendix. [DOI:10.5281/zenodo.8338037](https://doi.org/10.5281/zenodo.8338037)
 
 Bibtex:  
-> @INPROCEEDINGS{SPECAD2023,
->   author = {Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},
->   title = {{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study {--} Performance Data Artifact Appendix},
->   booktitle = {[Online]},
->   doi = {10.5281/zenodo.8338037},
->   year = {2023}
+> @INPROCEEDINGS{SPECAD2023,  
+>   author = {Afzal, Ayesha and Hager, Georg and Wellein, Gerhard},   
+>   title = {{SPEChpc} {2021} Benchmarks on Ice Lake and Sapphire Rapids Infiniband Clusters{:} A Performance and Energy Case Study {--} Performance Data Artifact Appendix},   
+>   booktitle = {[Online]},   
+>   doi = {10.5281/zenodo.8338037},   
+>   year = {2023}   
 > }
 
 
