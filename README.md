@@ -96,7 +96,7 @@ Further information on hardware is available in Table 3 of the paper.
 <a name="state"></a>
 
 - **B1.1.5 Run-time environment and state**:
-A thorough state description of the two systems that were utilized to conduct the experiments can be found in [`ClusterA_state.csv`](ClusterA_state.csv) and [`ClusterB_state.csv`](ClusterB_state.csv).
+A thorough state description of the two systems that were utilized to conduct the experiments can be found in [`ClusterA-state.csv`](ClusterA-state.csv) and [`ClusterB-state.csv`](ClusterB-state.csv).
 This lists comprehensive hardware information on 
 
      - libraries and compilers along with their versions 
